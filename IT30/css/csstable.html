@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="csshome.css">
+
+	<style type="text/css">
+         table.one {border-collapse:collapse;}
+         table.two {border-collapse:separate;}
+         td.a {
+            border-style:dotted;
+            border-width:3px;
+            border-color:white; 
+            padding: 10px;
+         }
+         td.b {
+            border-style:solid;
+            border-width:3px;
+            border-color:white;
+            padding:10px;
+         }
+
+         table.three {
+            border-collapse:separate;
+            width:400px;
+            border-spacing:10px;
+         }
+         table.four {
+            border-collapse:separate;
+            width:400px;
+            border-spacing:10px 50px;
+         }
+
+         caption.top {caption-side:top}
+         caption.bottom {caption-side:bottom}
+         caption.left {caption-side:left}
+         caption.right {caption-side:right}
+         
+      </style>
+
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="csshome.html">Css HOME</a></li>
+		<li><a href="cssintro.html">Css Introduction</a></li>
+		<li><a href="csssyntax.html">Css Syntax</a></li>
+		<li><a href="cssinclusion.html">Css Inclusion</a></li>
+		<li><a href="cssmeasure.html">Css Measurement Units</a></li>
+		<li><a href="cssfont.html">Css Fonts</a></li>
+		<li><a href="csstext.html">Css Text</a></li>
+		<li><a href="csslink.html">Css Links</a></li>
+		<li><a href="" id="home">Css Tables</a></li>
+		<li><a href="cssborder.html">Css Borders</a></li>
+		<li><a href="cssmargin.html">Css Margins</a></li>
+		<li><a href="csslist.html">Css Lists</a></li>
+		<li><a href="csspadding.html">Css Padding</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">CSS - Tables</h1>
+			<div id="content">
+				<p>
+					CThis tutorial will teach you how to set different properties of an HTML table using CSS. You can set following properties of a table −<br><br>
+
+					<ul>
+						<li>The <strong id="text"> border-collapse</strong> specifies whether the browser should control the appearance of the adjacent borders that touch each other or whether each cell should maintain its style.</li> <br>
+
+						<li>The <strong id="text"> border-spacing</strong> specifies the width that should appear between table cells.</li> <br>
+
+						<li>The <strong id="text"> caption-side</strong> captions are presented in the <caption> element. By default, these are rendered above the table in the document. You use the caption-side property to control the placement of the table caption.</li> <br>
+
+						<li>The <strong id="text"> empty-cells</strong> specifies whether the border should be shown if a cell is empty.</li> <br>
+
+						<li>The <strong id="text"> table-layout</strong> allows browsers to speed up layout of a table by using the first width properties it comes across for the rest of a column rather than having to load the whole table before rendering it.</li>
+
+					</ul> <br><br>
+
+					Now, we will see how to use these properties with examples.
+				</p>
+			</div>
+
+			<h1 id="names">The border-collapse Property:</h1>
+			<div id="content">
+				<p>
+					This property can have two values collapse and separate. The following example uses both the values: <br><br>
+
+					<strong id="text">
+					< html> <br>
+					   < head>  <br> <br>
+					   
+					      < style type="text/css">  <br>
+					         table.one {border-collapse:collapse;}  <br>
+					         table.two {border-collapse:separate;}  <br>
+					         td.a {  <br>
+					            border-style:dotted;  <br>
+					            border-width:3px;  <br>
+					            border-color:white;   <br>
+					            padding: 10px;  <br>
+					         }  <br>
+					         td.b {  <br>
+					            border-style:solid;  <br>
+					            border-width:3px;  <br>
+					            border-color:white;  <br>
+					            padding:10px;  <br>
+					         }  <br>
+					      < /style>  <br> <br>
+					      
+					   < /head>  <br>
+					   < body>  <br> <br>
+					   
+					      < table class="one">  <br>
+					         <caption>Collapse Border Example</caption>  <br>
+					         <tr><td class="a"> Cell A Collapse Example</td></tr>  <br>
+					         <tr><td class="b"> Cell B Collapse Example</td></tr>  <br>
+					      < /table>  <br>
+					      < br />  <br> <br>
+					      
+					      < table class="two">  <br>
+					         < caption>Separate Border Example</caption>  <br>
+					         < tr><td class="a"> Cell A Separate Example</td></tr>  <br>
+					         < tr><td class="b"> Cell B Separate Example</td></tr>  <br>
+					      < /table>  <br>
+					      
+					   < /body>  <br>
+					< /html>
+
+					</strong> <br> <br>
+
+					It will produce the following result − <br><br>
+
+					<table class="one">
+				         <caption>Collapse Border Example</caption>
+				         <tr><td class="a"> Cell A Collapse Example</td></tr>
+				         <tr><td class="b"> Cell B Collapse Example</td></tr>
+				      </table>
+				      						<br><br>
+				     <table class="two">
+				         <caption>Separate Border Example</caption>
+				         <tr><td class="a"> Cell A Separate Example</td></tr>
+				         <tr><td class="b"> Cell B Separate Example</td></tr>
+			     	 </table>
+
+				</p>
+			</div>
+
+			<h1 id="names">The border-spacing Property</h1>
+			<div id="content">
+				<p>
+					The border-spacing property specifies the distance that separates adjacent cells'. borders. It can take either one or two values; these should be units of length.
+					<br><br>
+
+					If you provide one value, it will applies to both vertical and horizontal borders. Or you can specify two values, in which case, the first refers to the horizontal spacing and the second to the vertical spacing − <br><br>
+
+					NOTE − Unfortunately, this property does not work in Netscape 7 or IE 6.<br><br>
+
+					< style type="text/css"> <br>
+					   /* If you provide one value */ <br>
+					   table.example {border-spacing:10px;} <br>
+					   /* This is how you can provide two values */ <br>
+					   table.example {border-spacing:10px; 15px;} <br>
+					< /style> <br><br>
+
+					Now let's modify the previous example and see the effect − <br><br>
+
+											<strong id="text">
+					< html> <br>
+					   < head> <br><br>
+					   
+					      < style type="text/css"> <br>
+					         table.one { <br>
+					            border-collapse:separate; <br>
+					            width:400px; <br> 
+					            border-spacing:10px; <br>
+					         } <br>
+					         table.two { <br>
+					            border-collapse:separate; <br>
+					            width:400px; <br>
+					            border-spacing:10px 50px; <br>
+					         } <br>
+					      < /style> <br><br>
+					      
+					   < /head> <br>
+					   < body> <br><br>
+					   
+					      < table class="one" border="1"> <br>
+					         < caption>Separate Border Example with border-spacing</caption> <br>
+					         < tr><td> Cell A Collapse Example</td></tr> <br>
+					         < tr><td> Cell B Collapse Example</td></tr> <br>
+					      < /table> <br><br>
+					      <br />
+					      
+					      < table class="two" border="1"> <br>
+					         < caption>Separate Border Example with border-spacing</caption> <br>
+					         < tr><td> Cell A Separate Example</td></tr> <br>
+					         < tr><td> Cell B Separate Example</td></tr> <br>
+					      < /table> <br><br>
+					      
+					   < /body> <br>
+					< /html>  <br><br> 
+													</strong>  <br><br> 
+
+					 It will produce the following result − <br><br>
+
+					 <table class="three" border="1">
+				         <caption>Separate Border Example with border-spacing</caption>
+				         <tr><td> Cell A Collapse Example</td></tr>
+				         <tr><td> Cell B Collapse Example</td></tr>
+				      </table>
+				       <br><br>
+      
+				      <table class="four" border="1">
+				         <caption>Separate Border Example with border-spacing</caption>
+				         <tr><td> Cell A Separate Example</td></tr>
+				         <tr><td> Cell B Separate Example</td></tr>
+				      </table>
+				</p>
+			</div>
+
+
+			<h1 id="names">The caption-side Property</h1>
+			<div id="content">
+				<p>
+					The caption-side property allows you to specify where the content of a <caption> element should be placed in relationship to the table. The table that follows lists the possible values. <br><br>
+
+					This property can have one of the four values top, bottom, left or right. The following example uses each value. <br><br>
+
+					NOTE: These properties may not work with your IE Browser. <br><br>
+
+					<strong id="text">
+					
+					< html> <br>
+						  < head> <br><br>
+						   
+						      < style type="text/css"> <br>
+						         caption.top {caption-side:top} <br>
+						         caption.bottom {caption-side:bottom} <br>
+						         caption.left {caption-side:left} <br>
+						         caption.right {caption-side:right} <br>
+						      < /style> <br><br>
+						      
+						   < /head> <br>
+						   < body> <br><br>
+						   
+						      < table style="width:400px; border:1px solid black;"> <br>
+						         < caption class="top"> <br>
+						         This caption will appear at the top <br>
+						         < /caption> <br>
+						         < tr><td > Cell A</td></tr> <br>
+						         < tr><td > Cell B</td></tr> <br>
+						      < /table> <br>
+						      < br /> <br><br>
+						      
+						      < table style="width:400px; border:1px solid black;"> <br>
+						         < caption class="bottom"><br>
+						         This caption will appear at the bottom <br>
+						         < /caption> <br>
+						         < tr><td > Cell A</td></tr> <br>
+						         < tr><td > Cell B</td></tr> <br>
+						      < /table> <br>
+						      < br /> <br><br>
+						      
+						      < table style="width:400px; border:1px solid black;"> <br>
+						         < caption class="left"> <br>
+						         This caption will appear at the left <br>
+						         < /caption> <br>
+						         < tr><td > Cell A</td></tr> <br>
+						         < tr><td > Cell B</td></tr> <br>
+						      < /table> <br> <br>
+						      <br />
+						      
+						      < table style="width:400px; border:1px solid black;"> <br>
+						         < caption class="right"> <br>
+						         This caption will appear at the right <br>
+						         < /caption> <br>
+						         < tr><td > Cell A</td></tr> <br>
+						         < tr><td > Cell B</td></tr> <br>
+						      < /table> <br><br>
+						      
+						   < /body> <br>
+						< /html> 
+					</strong> <br><br>
+
+					 It will produce the following result −<br><br>
+
+					 <table style="width:400px; border:1px solid black;">
+				         <caption class="top">
+				         This caption will appear at the top
+				         </caption>
+				         <tr><td > Cell A</td></tr>
+				         <tr><td > Cell B</td></tr>
+				      </table>
+				              <br />
+				      
+				      <table style="width:400px; border:1px solid black;">
+				         <caption class="bottom">
+				         This caption will appear at the bottom
+				         </caption>
+				         <tr><td > Cell A</td></tr>
+				         <tr><td > Cell B</td></tr>
+				      </table>
+				     			<br />
+				      
+				      <table style="width:400px; border:1px solid black;">
+				         <caption class="left">
+				         This caption will appear at the left
+				         </caption>
+				         <tr><td > Cell A</td></tr>
+				         <tr><td > Cell B</td></tr>
+				      </table>
+				     			 <br />
+				      
+				      <table style="width:400px; border:1px solid black;">
+				         <caption class="right">
+				         This caption will appear at the right
+				         </caption>
+				         <tr><td > Cell A</td></tr>
+				         <tr><td > Cell B</td></tr>
+				      </table>
+				</p>
+			</div>
+			
+</div>
+</div>
+</body>
+</html>

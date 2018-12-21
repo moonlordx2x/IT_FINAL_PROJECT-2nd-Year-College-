@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="htmlcss.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="htmlhome.html">HTMl HOME</a></li>
+		<li><a href="htmloverview.html">HTML Overview</a></li>
+		<li><a href="htmlbasic.html">HTML Basic Tags</a></li>
+		<li><a href="htmlelement.html">HTML Elements</a></li>
+		<li><a href="" id="home">HTML Attribute</a></li>
+		<li><a href="htmlformat.html">HTML Formatting</a></li>
+		<li><a href="htmlphrase.html">HTML Phrase Tags</a></li>
+		<li><a href="htmlcomment.html">HTML Comments</a></li>
+		<li><a href="htmltable.html">HTML Tables</a></li>
+		<li><a href="htmllist.html">HTML Lists</a></li>
+		<li><a href="htmllinks.html">HTML Text Links</a></li>
+		<li><a href="htmlblock.html">HTML Blocks</a></li>
+		<li><a href="htmlfont.html">HTML Fonts</a></li>
+		<li><a href="htmlstyle.html">HTML StyleSheet</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">HTML Attributes</h1>
+			<div id="content">
+				<p>
+					We have seen few HTML tags and their usage like heading tags <br>
+					< h1>,< h2>, paragraph tag < p> and other tags. We used them so far in their simplest form, but most of the HTML tags can also have attributes, which are extra bits of information. <br><br>
+
+					An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts: <br><br>
+
+					a <strong id="text">name</strong> and a <strong id="text">value</strong>: <br><br>
+
+					<ul>
+						<li>The <strong id="text">name </strong>is the property you want to set. For example, the paragraph < p> element in the example carries an attribute whose name is <strong id="text">align</strong>, which you can use to indicate the alignment of paragraph on the page.</li> <br>
+
+						<li>The <strong id="text">value </strong>is what you want the value of the property to be set and always put within quotations. The below example shows three possible values of align attribute: <strong id="text">left, center and right.</strong></li>
+					</ul> <br><br>
+
+					Attribute names and attribute values are case-insensitive. However, the World Wide Web Consortium (W3C) recommends lowercase attributes/attribute values in their HTML 4 recommendation. <br>
+
+					<h2>Example</h2>
+
+					<strong id="text">
+		< !DOCTYPE html> <br>
+				< html> <br>
+						< head> <br>
+								< title>Align Attribute  Example< /title> <br>
+						< /head> <br>
+						< body> <br>
+								< p align="left">This is left aligned< /p> <br>
+								< p align="center">This is center aligned< /p> <br>
+								< p align="right">This is right aligned< /p> <br>
+						< /body> <br>
+				< /html> 
+					</strong> <br><br>
+
+					This will display following result: <br><br>
+
+					<p align="left">This is left aligned</p>
+					<p align="center">This is center aligned</p>
+					<p align="right">This is right aligned</p>
+
+				</p>
+			</div>
+
+			<h1 id="names">The id Attribute</h1>
+			<div id="content">
+				<p>
+					The <strong id="text">id attribute</strong> of an HTML tag can be used to uniquely identify any element within an HTML page. There are two primary reasons that you might want to use an id attribute on an element: <br><br>
+
+					<ul>
+						<li>If an element carries an id attribute as a unique identifier it is possible to identify just that element and its content.</li> <br>
+
+						<li>If you have two elements of the same name within a Web page (or style sheet), you can use the id attribute to distinguish between elements that have the same name.</li>
+
+					</ul> <br>
+					We will discuss style sheet in separate tutorial. For now, let's use the id attribute to distinguish between two paragraph elements as shown below. <br>
+
+					<h2>Example</h2>
+
+					< p id="html">This para explains what is HTML < /p> <br>
+					< p id="css">This para explains what is Cascading Style Sheet < /p>
+					</p>
+			</div>
+
+			<h1 id="names">The title Attribute</h1>
+			<div id="content">
+				<p>
+					The <strong id="text">title</strong> attribute gives a suggested title for the element. They syntax for the <strong id="text">title</strong> attribute is similar as explained for <strong id="text">id</strong> attribute: <br><br>
+
+					The behavior of this attribute will depend upon the element that carries it, although it is often displayed as a tooltip when cursor comes over the element or while the element is loading.<br>
+
+					<h2>Example</h2>
+
+					<strong id="text">
+		< !DOCTYPE html> <br>
+					< html> <br>
+						< head> <br>
+								< title>The title Attribute Example< /title> <br>
+						< /head> <br>
+					< body> <br>
+									< h3 title="Hello HTML!">Titled Heading Tag Example< /h3> <br>
+					< /body> <br>
+					< /html>
+					</strong> <br><br>
+
+					This will display following result: <br><br>
+
+					<h3 title="Hello HTML!">Titled Heading Tag Example</h3>
+
+					Now try to bring your cursor over "Titled Heading Tag Example" and you will see that whatever title you used in your code is coming out as a tooltip of the cursor.
+				</p>
+			</div>
+
+			<h1 id="names">The class Attribute</h1>
+			<div id="content">
+				<p>
+					The class attribute is used to associate an element with a style sheet, and specifies the class of element. You will learn more about the use of the class attribute when you will learn Cascading Style Sheet (CSS). So for now you can avoid it. <br><br>
+
+					The value of the attribute may also be a space-separated list of class names. For example: <br><br>
+
+					 class ="className1 className2 className3"
+				</p>
+			</div>
+
+			<h1 id="names">The style Attribute</h1>
+			<div id="content">
+				<p>
+					The style attribute allows you to specify Cascading Style Sheet (CSS) rules within the element. <br><br>
+
+					<h2>Example</h2>
+
+					<strong id="text">
+		< !DOCTYPE html> <br>
+				 < html> <br>
+					  < head> <br>
+					       < title>The style Attribute< /title> <br>
+					  < /head> <br>
+				      < body> <br>
+					       < p style="font-family:arial; color:#FF0000;">Some text...< /p> <br>
+					  < /body> <br>
+				< /html>
+					</strong> <br><br>
+
+					This will produce following result: <br><br>
+
+					<p style="font-family:arial; color:#FF0000;">Some text...</p>
+
+					At this point of time, we are not learning CSS, so just let's proceed without bothering much about CSS. Here you need to understand what are HTML attributes and how they can be used while formatting content.
+				</p>
+			</div>
+
+			<h1 id="names">Generic Attributes</h1>
+			<div id="content">
+				<p>
+					Here's a table of some other attributes that are readily usable with many of the HTML tags. <br><br>
+
+					<table align="center" width="600" border="2px">
+						<tr>
+							<th>Attribute</th>
+							<th>Options</th>
+							<th>Function</th>
+						</tr>
+
+						<tr>
+							<td>align</td>
+							<td>right, left, center	</td>
+							<td>Horizontally aligns tags</td>
+						</tr>
+
+						<tr>
+							<td>valign</td>
+							<td>top, middle, bottom</td>
+							<td>Vertically aligns tags within an HTML element.</td>
+						</tr>
+
+						<tr>
+							<td>bgcolor</td>
+							<td>numeric, hexidecimal, RGB values</td>
+							<td>Places a background color behind an element</td>
+						</tr>
+						
+						<tr>
+							<td>background</td>
+							<td>URL</td>
+							<td>Places a background image behind an element</td>
+						</tr>
+						
+						<tr>
+							<td>id</td>
+							<td>User Defined</td>
+							<td>Names an element for use with Cascading Style Sheets.</td>
+						</tr>
+						
+						<tr>
+							<td>class</td>
+							<td>User Defined</td>
+							<td>Classifies an element for use with Cascading Style Sheets.</td>
+						</tr>
+						
+						<tr>
+							<td>width</td>
+							<td>Numeric Value</td>
+							<td>Specifies the width of tables, images, or table cells.</td>
+						</tr>
+
+						<tr>
+							<td>height</td>
+							<td>Numeric Value</td>
+							<td>Specifies the height of tables, images, or table cells.</td>
+						</tr>
+
+						<tr>
+							<td>title</td>
+							<td>User Defined</td>
+							<td>"Pop-up" title of the elements.</td>
+						</tr>
+					</table> <br><br>
+
+					We will see related examples as we will proceed to study other HTML tags. For a complete list of HTML Tags and related attributes please check reference to 
+					<strong id="text">HTML Tags List.</strong>
+				</p>
+			</div>
+			
+</div>
+</div>
+</body>
+</html>

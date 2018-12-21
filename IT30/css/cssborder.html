@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="csshome.css">
+
+	<style type="text/css">
+		p.example1{
+            border:1px solid;
+            border-bottom-color:#009900; /* Green */
+            border-top-color:#FF0000;    /* Red */
+            border-left-color:#330000;   /* Black */
+            border-right-color:#0000CC;  /* Blue */
+         }
+         p.example2{
+            border:1px solid;
+            border-color:#009900;        /* Green */
+         }
+	</style>
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="csshome.html">Css HOME</a></li>
+		<li><a href="cssintro.html">Css Introduction</a></li>
+		<li><a href="csssyntax.html">Css Syntax</a></li>
+		<li><a href="cssinclusion.html">Css Inclusion</a></li>
+		<li><a href="cssmeasure.html">Css Measurement Units</a></li>
+		<li><a href="cssfont.html">Css Fonts</a></li>
+		<li><a href="csstext.html">Css Text</a></li>
+		<li><a href="csslink.html">Css Links</a></li>
+		<li><a href="csstable.html">Css Tables</a></li>
+		<li><a href="" id="home">Css Borders</a></li>
+		<li><a href="cssmargin.html">Css Margins</a></li>
+		<li><a href="csslist.html">Css Lists</a></li>
+		<li><a href="csspadding.html">Css Padding</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">CSS - Borders</h1>
+			<div id="content">
+				<p>
+					The border properties allow you to specify how the border of the box representing an element should look. There are three properties of a border you can change: <br><br>
+
+					<ul>
+						<li>The <strong id="text"> border-color</strong> specifies the color of a border.</li> <br>
+
+						<li>The <strong id="text"> border-style</strong> specifies whether a border should be solid, dashed line, double line, or one of the other possible values.</li> <br>
+
+						<li>The <strong id="text"> border-width</strong> specifies the width of a border.</li>
+					</ul> <br>
+
+					Now, we will see how to use these properties with examples.
+				</p>
+			</div>
+
+			<h1 id="names">The border-color Property</h1>
+			<div id="content">
+				<p>
+					The border-color property allows you to change the color of the border surrounding an element. You can individually change the color of the bottom, left, top and right sides of an element's border using the properties - <br><br>
+
+					<ul>
+						<li><strong id="text">border-bottom-color</strong> changes the color of bottom border. border.</li> <br>
+
+						<li><strong id="text">border-top-color</strong> changes the color of top border.</li> <br>
+
+						<li><strong id="text">border-left-color</strong> changes the color of left border.</li>
+
+						<li><strong id="text">border-right-color</strong> changes the color of right border.</li>
+					</ul> <br>
+
+					The following example shows the effect of all these properties − <br><br>
+
+					<strong id="text">
+						< html> <br>
+							   < head>  <br> <br>
+							   
+							      < style type="text/css">  <br>
+							         p.example1{  <br>
+							            border:1px solid; <br>
+							            border-bottom-color:#009900; /* Green */ <br>
+							            border-top-color:#FF0000;    /* Red */ <br>
+							            border-left-color:#330000;   /* Black */ <br>
+							            border-right-color:#0000CC;  /* Blue */ <br>
+							         } <br>
+							         p.example2{ <br>
+							            border:1px solid; <br>
+							            border-color:#009900;        /* Green */ <br>
+							         } <br>
+							      < /style> <br> <br>
+							      
+							   < /head> <br>
+							   < body> <br> <br>
+							   
+							      < p class="example1"> <br>
+							      This example is showing all borders in different colors. <br>
+							      < /p> <br> <br>
+							      
+							      < p class="example2"> <br>
+							      This example is showing all borders in green color only. <br>
+							      < /p> <br> <br>
+							      
+							   < /body> <br>
+						< /html> 
+					</strong> <br> <br>
+
+					It will produce the following result − <br><br>
+
+							<p class="example1">
+						      This example is showing all borders in different colors.
+						      </p>
+						      
+						    <p class="example2">
+						      This example is showing all borders in green color only.
+						       </p>
+				</p>
+			</div>
+
+			<h1 id="names">The border-style Property</h1>
+			<div id="content">
+				<p>
+					The border-style property allows you to select one of the following styles of border -<br><br>
+
+					<ul>
+						<li> <strong id="text">none:</strong> No border. (Equivalent of border-width:0;)</li> <br>
+
+						<li> <strong id="text">solid:</strong> Border is a single solid line.</li> <br>
+
+						<li> <strong id="text">dotted:</strong> Border is a series of dots.</li> <br>
+
+						<li> <strong id="text">dashed:</strong> Border is a series of short lines.</li><br>
+
+						<li> <strong id="text">double:</strong> Border is two solid lines.</li><br>
+
+						<li> <strong id="text">groove:</strong> Border looks as though it is carved into the page.</li><br>
+
+						<li> <strong id="text">ridge:</strong> Border looks the opposite of groove.</li><br>
+
+						<li> <strong id="text">inset:</strong> Border makes the box look like it is embedded in the page.</li><br>
+
+						<li> <strong id="text">outset:</strong> Border makes the box look like it is coming out of the canvas.</li><br>
+
+						<li> <strong id="text">hidden:</strong> Same as none, except in terms of border-conflict resolution for table elements.</li>
+					</ul><br><br>
+
+					You can individually change the style of the bottom, left, top, and right borders of an element using the following properties - <br><br>
+
+					<ul>
+						<li><strong id="text">border-bottom-style</strong> changes the style of bottom border.</li> <br>
+
+						<li><strong id="text">border-top-style</strong> changes the style of top border.</li> <br>
+
+						<li><strong id="text">border-left-style</strong> changes the style of left border.</li> <br>
+
+						<li><strong id="text">border-right-style</strong> changes the style of right border.</li>
+					</ul> <br><br>
+
+					The following example shows all these border styles − <br><br>
+								<strong id="text">
+				< html> <br>
+					   < head> <br>
+					   			< /head> <br><br>
+					   
+					   < body>. <br>
+						      < p style="border-width:4px; border-style:none;"> <br>
+						      This is a border with none width. <br>
+						      < /p> <br><br>
+						      
+						      < p style="border-width:4px; border-style:solid;"> <br>
+						      This is a solid border. <br>
+						      < /p> <br><br>
+						      
+						      < p style="border-width:4px; border-style:dashed;"> <br>
+						      This is a dahsed border. <br>
+						      < /p> <br><br>
+						      
+						      < p style="border-width:4px; border-style:double;"> <br>
+						      This is a double border. <br>
+						      < /p> <br><br>
+						      
+						      < p style="border-width:4px; border-style:groove;"> <br>
+						      This is a groove border. <br>
+						      < /p> <br><br>
+						      
+						      < p style="border-width:4px; border-style:ridge"> <br>
+						      This is aridge  border. <br>
+						      < /p> <br><br>
+						      
+						      < p style="border-width:4px; border-style:inset;"> <br>
+						      This is a inset border. <br>
+						      < /p> <br><br>
+						      
+						      < p style="border-width:4px; border-style:outset;"> <br>
+						      This is a outset border. <br>
+						      < /p> <br><br>
+						      
+						      < p style="border-width:4px; border-style:hidden;"> <br>
+						      This is a hidden border. <br>
+						      < /p> <br><br>
+						      
+						      < p style="border-width:4px;border-top-style:solid; <br>	
+						      border-bottom-style:dashed; border-left-style:groove; <br>
+						      border-right-style:double;"> <br>
+						      This is a a border with four different styles. <br>
+						      < /p> <br>
+					   < /body> <br><br>
+					   
+					< /html> 
+					</strong> <br><br>
+
+					It will produce the following result − <br><br>
+
+					<p style="border-width:4px; border-style:none;">
+				      This is a border with none width.
+				      </p>
+				      
+				    <p style="border-width:4px; border-style:solid;">
+				      This is a solid border.
+				      </p>
+				      
+				    <p style="border-width:4px; border-style:dashed;">
+				      This is a dahsed border.
+				      </p>
+				      
+				    <p style="border-width:4px; border-style:double;">
+				      This is a double border.
+				      </p>
+				      
+				    <p style="border-width:4px; border-style:groove;">
+				      This is a groove border.
+				      </p>
+				      
+				    <p style="border-width:4px; border-style:ridge">
+				      This is aridge  border.
+				      </p>
+				      
+				    <p style="border-width:4px; border-style:inset;">
+				      This is a inset border.
+				      </p>
+				      
+				    <p style="border-width:4px; border-style:outset;">
+				      This is a outset border.
+				      </p>
+				      
+				    <p style="border-width:4px; border-style:hidden;">
+				      This is a hidden border.
+				      </p>
+				      
+				    <p style="border-width:4px;border-top-style:solid;
+				      border-bottom-style:dashed; border-left-style:groove; border-right-style:double;">
+				      This is a a border with four different styles.
+				      </p>
+				</p>
+			</div>
+
+			<h1 id="names">The border-width Property −</h1>
+			<div id="content">
+				<p>
+					The border-width property allows you to set the width of an element borders. The value of this property could be either a length in px, pt or cm or it should be set to thin, medium or thick. <br><br>
+
+					You can individually change the width of the bottom, top, left, and right borders of an element using the following properties − <br><br>
+
+					<ul>
+						<li><strong id="text">border-bottom-width </strong>changes the width of bottom border.</li> <br>
+
+						<li><strong id="text">border-top-width </strong>changes the width of top border.</li> <br>
+
+						<li><strong id="text">border-left-width </strong>changes the width of left border.</li> <br>
+
+						<li><strong id="text">border-right-width </strong>changes the width of right border.</li>
+					</ul> <br><br>
+
+					The following example shows all these border width − <br><br>
+
+					<strong id="text">
+						< html> <br>
+							   < head>< /head> <br>
+								   < body> <br>
+								      < p style="border-width:4px; border-style:solid;"> <br>
+								      This is a solid border whose width is 4px. <br>
+								      < /p> <br><br>
+								       
+								      < p style="border-width:4pt; border-style:solid;"> <br>
+								      This is a solid border whose width is 4pt. <br>
+								      < /p> <br><br>
+								      
+								      < p style="border-width:thin; border-style:solid;"> <br>
+								      This is a solid border whose width is thin. <br>
+								      </p> <br><br>
+								      
+								      < p style="border-width:medium; border-style:solid;"> <br>
+								      This is a solid border whose width is medium; <br>
+								      </p> <br><br>
+								      
+								      < p style="border-width:thick; border-style:solid;"> <br>
+								      This is a solid border whose width is thick. <br>
+								      </p> <br><br>
+								      
+								      < p style="border-bottom-width:4px;border-top-width:10px; <br>
+								      border-left-width:  <br>2px;border-right-width:15px;border-style:solid;"> <br>
+								      This is a a border with four different width. <br>
+								      < /p> <br>
+								   < /body> <br>
+						< /html>
+					</strong> <br><br>
+
+					It will produce the following result − <br><br>
+
+					  <p style="border-width:4px; border-style:solid;">
+				      This is a solid border whose width is 4px.
+				      </p>
+				      
+				      <p style="border-width:4pt; border-style:solid;">
+				      This is a solid border whose width is 4pt.
+				      </p>
+				      
+				      <p style="border-width:thin; border-style:solid;">
+				      This is a solid border whose width is thin.
+				      </p>
+				      
+				      <p style="border-width:medium; border-style:solid;">
+				      This is a solid border whose width is medium;
+				      </p>
+				      
+				      <p style="border-width:thick; border-style:solid;">
+				      This is a solid border whose width is thick.
+				      </p>
+				      
+				      <p style="border-bottom-width:4px;border-top-width:10px;
+				      border-left-width: 2px;border-right-width:15px;border-style:solid;">
+				      This is a a border with four different width.
+				      </p>
+				</p> 
+			</div>
+</div>
+</div>
+</body>
+</html>

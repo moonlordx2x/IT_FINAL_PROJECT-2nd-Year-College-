@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="ajava.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="">JAVA HOME</a></li>
+		<li><a href="javaoverview.html">JAVA Overview</a></li>
+		<li><a href="javaenvironment.html">JAVA Environment Setup</a></li>
+		<li><a href="javabasic.html">JAVA Basic Syntax</a></li>
+		<li><a href="" id="home">JAVA Object & Classes</a></li>
+		<li><a href="javadata.html">JAVA Basic Data Types</a></li>
+		<li><a href="javavariable.html">JAVA Variable Types</a></li>
+		<li><a href="javamodifier.html">JAVA Modifier Types</a></li>
+		<li><a href="javaoperator.html">JAVA Basic Operators</a></li>
+		<li><a href="javaloop.html">JAVA Loop Control</a></li>
+		<li><a href="javadecision.html">JAVA Decision Making</a></li>
+		<li><a href="javanumber.html">JAVA Numbers</a></li>
+		<li><a href="javacharacter.html">JAVA Characters</a></li>
+		<li><a href="javastring.html">JAVA Strings</a></li>
+		<li><a href="javaarray.html">JAVA Arrays</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">Java - Object and Classes</h1>
+			<div id="content">
+				<p>
+					Java is an Object-Oriented Language. As a language that has the Object-Oriented feature, Java supports the following fundamental concepts −
+
+					<ul type="square">
+						<li>Polymorphism</li>
+						<li>Inheritance</li>
+						<li>Encapsulation</li>
+						<li>Abstraction</li>
+						<li>Classes</li>
+						<li>Objects</li>
+						<li>Instance</li>
+						<li>Method</li>
+						<li>Message Parsing</li>
+					</ul>
+
+					In this chapter, we will look into the concepts - Classes and Objects. <br><br>
+
+					<ul>
+						<li> <strong id="text">Object − </strong>
+						Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors – wagging the tail, barking, eating. An object is an instance of a class.
+						</li> <br>
+
+						<li> <strong id="text">Class − </strong>
+						A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.
+						</li>
+					</ul>
+				</p>
+			</div>
+
+			<h1 id="names">Objects in Java</h1>
+			<div id="content">
+				<p>
+					Let us now look deep into what are objects. If we consider the real-world, we can find many objects around us, cars, dogs, humans, etc. All these objects have a state and a behavior. <br><br>
+
+					If we consider a dog, then its state is - name, breed, color, and the behavior is - barking, wagging the tail, running. <br><br>
+
+					If you compare the software object with a real-world object, they have very similar characteristics. <br><br>
+
+					Software objects also have a state and a behavior. A software object's state is stored in fields and behavior is shown via methods. <br><br>
+
+					So in software development, methods operate on the internal state of an object and the object-to-object communication is done via methods.
+			</div>
+
+			<h1 id="names">Classes in Java</h1>
+			<div id="content">
+				<p>
+					A class is a blueprint from which individual objects are created. <br><br>
+
+					Following is a sample of a class. <br>
+
+					<h2>Example</h2>
+ 	<strong id="text">
+					public class Dog { <br>
+					String breed; <br>
+				    int age; <br>
+			   	    String color; <br><br>
+
+					void barking() { <br>
+					   } <br><br>
+
+					   void hungry() { <br>
+					   } <br><br>
+
+					   void sleeping() { <br>
+					   }<br>
+					}
+	</strong> <br> <br>
+
+					A class can contain any of the following variable types. <br><br>
+
+					<ul type="square">
+						<li><strong id="text">Local variables − </strong>
+						Variables defined inside methods, constructors or blocks are called local variables. The variable will be declared and initialized within the method and the variable will be destroyed when the method has completed.
+						</li> <br>
+
+						<li><strong id="text">Instance variables − </strong>
+						Instance variables are variables within a class but outside any method. These variables are initialized when the class is instantiated. Instance variables can be accessed from inside any method, constructor or blocks of that particular class.
+						</li> <br>
+
+						<li><strong id="text">Class variables − </strong>
+						Class variables are variables declared within a class, outside any method, with the static keyword.
+						</li>
+					</ul> <br>
+
+					A class can have any number of methods to access the value of various kinds of methods. In the above example, barking(), hungry() and sleeping() are methods.
+					<br><br>
+
+					Following are some of the important topics that need to be discussed when looking into classes of the Java Language.
+				</p>
+			</div> <br>
+
+			<h1 id="names">Constructors</h1>
+			<div id="content">
+				<p>
+					When discussing about classes, one of the most important sub topic would be constructors. Every class has a constructor. If we do not explicitly write a constructor for a class, the Java compiler builds a default constructor for that class.<br> <br>
+
+					Each time a new object is created, at least one constructor will be invoked. The main rule of constructors is that they should have the same name as the class. A class can have more than one constructor. <br><br>
+
+					Following is an example of a constructor −  <br>
+
+					<h2>Example</h2>
+ 	<strong id="text">
+					public class Puppy { <br>
+					 public Puppy() { <br>
+				    } <br><br>
+
+					public Puppy(String name) { <br>
+					   // This constructor has one parameter, name. <br>
+					   } <br>
+					}
+	</strong> <br> <br>
+
+					Java also supports Singleton Classes where you would be able to create only one instance of a class. <br><br>
+
+					Note − We have two different types of constructors. We are going to discuss constructors in detail in the subsequent chapters.
+				</p>
+			</div> <br>
+
+</div>
+</div>
+</body>
+</html>

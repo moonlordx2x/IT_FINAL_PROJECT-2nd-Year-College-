@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="ajava.css">
+
+	<style media="screen">
+		tr{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="javahome.html">JAVA HOME</a></li>
+		<li><a href="javaoverview.html">JAVA Overview</a></li>
+		<li><a href="javaenvironment.html">JAVA Environment Setup</a></li>
+		<li><a href="javabasic.html">JAVA Basic Syntax</a></li>
+		<li><a href="javaobject.html">JAVA Object & Classes</a></li>
+		<li><a href="javadata.html">JAVA Basic Data Types</a></li>
+		<li><a href="javavariable.html">JAVA Variable Types</a></li>
+		<li><a href="javamodifier.html">JAVA Modifier Types</a></li>
+		<li><a href="javaoperator.html">JAVA Basic Operators</a></li>
+		<li><a href="javaloop.html">JAVA Loop Control</a></li>
+		<li><a href="javadecision.html">JAVA Decision Making</a></li>
+		<li><a href="" id="home">JAVA Numbers</a></li>
+		<li><a href="javacharacter.html">JAVA Characters</a></li>
+		<li><a href="javastring.html">JAVA Strings</a></li>
+		<li><a href="javaarray.html">JAVA Arrays</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">Java - Numbers Class</h1>
+			<div id="content">
+				<p>
+					Normally, when we work with Numbers, we use primitive data types such as byte, int, long, double, etc. <br><br>
+
+					<h2>Example</h2>
+
+					<strong id="text">
+						int i = 5000; <br>
+						float gpa = 13.65;<br>
+						double mask = 0xaf;
+					</strong><br><br>
+
+					However, in development, we come across situations where we need to use objects instead of primitive data types.
+					In order to achieve this, Java provides wrapper classes. <br><br>
+
+					The object of the wrapper class contains or wraps its respective primitive data type. Converting primitive data types into object is called boxing,
+					and this is taken care by the compiler. Therefore, while using a wrapper class you just need to pass the value of the primitive data type to
+					the constructor of the Wrapper class. <br><br>
+
+					And the Wrapper object will be converted back to a primitive data type, and this process is called unboxing.
+					The Number class is part of the java.lang package. <br><br>
+
+					Following is an example of boxing and unboxing − <br>
+
+					<h2>Example</h2>
+
+					<strong id="text">
+						public class Test { <br><br>
+
+						   public static void main(String args[]) { <br>
+						      Integer x = 5; // boxes int to an Integer object <br>
+						      x =  x + 10;   // unboxes the Integer to a int <br>
+						      System.out.println(x);  <br>
+						   } <br>
+						}
+					</strong> <br><br>
+
+					This will produce the following result − <br><br>
+
+					<h2>Output</h2>
+
+					<strong id="text">
+						15
+					</strong> <br><br>
+
+					When x is assigned an integer value, the compiler boxes the integer because x is integer object.
+					Later, x is unboxed so that they can be added as an integer.
+				</p>
+			</div>
+
+			<h1 id="names">Number Methods</h1>
+			<div id="content">
+				<p>
+					Following is the list of the instance methods that all the subclasses of the Number class implements − <br><br>
+
+					<table align="center" width="650" border="2px">
+						<tr>
+							<th>Sr.No.</th>
+							<th>
+								Method & Description
+							</th>
+						</tr>
+
+						<tr>
+							<td>
+								1
+							</td>
+							<td>
+								xxxValue() <br><br>
+							Converts the value of this Number object to the xxx data type and returns it.
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								2
+							</td>
+							<td>
+								compareTo() <br><br>
+								Compares this Number object to the argument.
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								3
+							</td>
+							<td>
+								equals() <br><br>
+Determines whether this number object is equal to the argument.
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								4
+							</td>
+							<td>
+								valueOf()<br><br>
+Returns an Integer object holding the value of the specified primitive.	</td>
+						</tr>
+
+						<tr>
+							<td>
+								5
+							</td>
+							<td>
+								toString()<br><br>
+Returns a String object representing the value of a specified int or Integer.
+				</td>
+					</tr>
+
+							<tr>
+								<td>
+									6
+								</td>
+								<td>
+									parseInt()<br><br>
+		This method is used to get the primitive data type of a certain String.
+					</td>
+						</tr>
+
+						<tr>
+							<td>
+								7
+							</td>
+							<td>
+								abs()<br><br>
+	Returns the absolute value of the argument.
+				</td>
+					</tr>
+
+					<tr>
+						<td>
+							8
+						</td>
+						<td>
+							ceil()<br><br>
+Returns the smallest integer that is greater than or equal to the argument. Returned as a double.
+				</td>
+				</tr>
+
+				<tr>
+					<td>
+						9
+					</td>
+					<td>
+						floor()<br><br>
+Returns the largest integer that is less than or equal to the argument. Returned as a double.
+			</td>
+			</tr>
+
+
+			<tr>
+				<td>
+					10
+				</td>
+				<td>
+						rint()<br><br>
+Returns the integer that is closest in value to the argument. Returned as a double.
+		</td>
+		</tr>
+					</table>
+				</p>
+			</div> <br><br>
+</div>
+</div>
+</body>
+</html>

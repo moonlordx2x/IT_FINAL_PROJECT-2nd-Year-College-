@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="c++basic.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="c++home.html">C++ HOME</a></li>
+		<li><a href="c++overview.html">C++ Overview</a></li>
+		<li><a href="c++environment.html">C++ Environment</a></li>
+		<li><a href="#" id="home">C++ Basic Syntax</a></li>
+		<li><a href="c++comment.html">C++ Comments</a></li>
+		<li><a href="c++data.html">C++ Data Types</a></li>
+		<li><a href="c++variable.html">C++ Variables Types</a></li>
+		<li><a href="c++scope.html">C++ Variables Scope</a></li>
+		<li><a href="c++contant.html">C++ Contants/Literals</a></li>
+		<li><a href="c++modifier.html">C++ Modifier Types</a></li>
+		<li><a href="c++storage.html">C++ Storage Classes</a></li>
+		<li><a href="c++operator.html">C++ Operators</a></li>
+		<li><a href="c++loop.html">C++ Loop Types</a></li>
+		<li><a href="c++decision.html">C++ Decision Making</a></li>
+		<li><a href="c++function.html">C++ Functions</a></li>
+		<li><a href="c++number.html">C++ Numbers</a></li>
+		<li><a href="c++array.html">C++ Arrays</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">C++ Basic Syntax</h1>
+			<div id="content1">
+				<p>
+					When we consider a C++ program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what do class, object, methods and Instance variables mean.<br><br>
+
+					<ul>
+					<li>Object - Objects have Properties and Behaviors. Example: A dog has Properties - color, name, breed as well as Behaviors - wagging, barking, eating. An object is an instance of a class.</li><br>
+
+					<li>Class - A class can be defined as a template/blueprint that describes the behaviors/states that object of its type support.</li><br>
+
+					<li>Methods - A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.</li><br>
+
+					<li>Instance Variables - Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.</li>
+					</ul>
+			</div>
+
+			<h1 id="names">C++ Program Structure:</h1>
+			<div id="content1">
+				<p>
+					Let us look at a simple code that would print the words Hello World.<br><br>
+					<strong id="text">
+					#include <iostream> <br>
+					using namespace std;<br><br>
+
+					// main() is where program execution begins.<br><br>
+
+					int main() {<br>
+  					 cout << "Hello World"; // prints Hello World<br>
+   					return 0;<br>
+					}<br><br>
+
+					OUTPUT:<br><br>
+					Hello World
+					</strong><br><br>
+
+					Let us look various parts of the above program:
+					<ul>
+
+					<li>
+					The C++ language defines several headers, which contain information that is either necessary or useful to your program. For this program, the header <strong id="text">iostream</strong> is needed.
+					</li>
+					<br>
+
+					<li>
+						The line <strong id="text">using namespace std;</strong> tells the compiler to use the std namespace. Namespaces are a relatively recent addition to C++.
+					</li>
+					<br>
+
+					<li>
+						The next line <strong id="text">// main() is where program execution begins.</strong> is a single-line comment available in C++. Single-line comments begin with // and stop at the end of the line.
+					</li>
+
+					<br>
+					<li>
+						The line <strong id="text">int main()</strong> is the main function where program execution begins.
+					</li>
+					<br>
+
+					<li>
+						The next line <strong id="text">cout << "This is my first C++ program.";</strong> causes the message "This is my first C++ program" to be displayed on the screen.
+					</li>
+					<br>
+
+					<li>
+						The next line <strong id="text">return 0;</strong> terminates main( )function and causes it to return the value 0 to the calling process.
+					</li>
+					</ul>
+				</p>
+			</div>
+
+			<h1 id="names">Semicolons & Blocks in C++</h1>
+			<div id="content1">
+				<p>
+					In C++, the semicolon is a statement terminator. That is, each individual statement must be ended with a semicolon. It indicates the end of one logical entity.<br><br>
+
+					For example, following are three different statements -<br><br>
+
+					<strong id="text">
+						x = y;<br>
+						y = y+1;<br>
+						add(x, y);
+					</strong><br><br>
+
+					A block is a set of logically connected statements that are surrounded by opening and closing braces. For example:<br><br>
+
+					<strong id="text">
+					{	<br>
+ 					 cout << "Hello World"; // prints Hello World <br>
+   					 return 0; <br>
+					}
+					</strong><br><br>
+
+					C++ does not recognize the end of the line as a terminator. For this reason, it does not matter where on a line you put a statement. For example:<br><br>
+
+					<strong id="text">
+						x = y; <br>
+						y = y+1; <br>
+						add(x, y);
+					</strong><br><br>
+
+					is the same as <br><br>
+
+					<strong id="text">
+						x = y; y = y+1; add(x, y);
+					</strong>
+				</p>
+			</div>
+
+			<h1 id="names">Whitespace in C++</h1>
+			<div id="content1">
+				<p>
+					A line containing only whitespace, possibly with a comment, is known as a blank line, and C++ compiler totally ignores it.<br><br>
+
+					Whitespace is the term used in C++ to describe blanks, tabs, newline characters and comments. Whitespace separates one part of a statement from another and enables the compiler to identify where one element in a statement, such as int, ends and the next element begins. Therefore, in the statement,<br><br>
+
+					<strong id="text"> int age;</strong> <br><br>
+
+					there must be at least one whitespace character (usually a space) between int and age for the compiler to be able to distinguish them. On the other hand, in the statement. <br><br>
+
+					<strong id="text"> fruit = apples + oranges;   // Get the total fruit</strong> <br><br>
+
+					no whitespace characters are necessary between fruit and =, or between = and apples, although you are free to include some if you wish for readability purpose.
+				</p>
+			</div>
+	</div>
+</div>
+</body>
+</html>

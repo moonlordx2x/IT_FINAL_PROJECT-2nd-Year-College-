@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="c++scope.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="c++home.html">C++ HOME</a></li>
+		<li><a href="c++overview.html">C++ Overview</a></li>
+		<li><a href="c++environment.html">C++ Environment</a></li>
+		<li><a href="c++basic.html">C++ Basic Syntax</a></li>
+		<li><a href="c++comment.html">C++ Comments</a></li>
+		<li><a href="c++data.html">C++ Data Types</a></li>
+		<li><a href="c++variable.html">C++ Variables Types</a></li>
+		<li><a href="" id="home">C++ Variables Scope</a></li>
+		<li><a href="c++contant.html">C++ Contants/Literals</a></li>
+		<li><a href="c++modifier.html">C++ Modifier Types</a></li>
+		<li><a href="c++storage.html">C++ Storage Classes</a></li>
+		<li><a href="c++operator.html">C++ Operators</a></li>
+		<li><a href="c++loop.html">C++ Loop Types</a></li>
+		<li><a href="c++decision.html">C++ Decision Making</a></li>
+		<li><a href="c++function.html">C++ Functions</a></li>
+		<li><a href="c++number.html">C++ Numbers</a></li>
+		<li><a href="c++array.html">C++ Arrays</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">Variable Scope in C++</h1>
+			<div id="content1">
+				<p>
+					A scope is a region of the program and broadly speaking there are three places, where variables can be declared -<br><br>
+
+					<ul>
+						<li id="text">
+							Inside a function or a block which is called local variables, <br><br>
+						</li>
+						<li id="text">
+							In the definition of function parameters which is called formal parameters. <br><br>
+						</li>
+						<li id="text">
+							Outside of all functions which is called global variables.
+						</li>
+					</ul> <br><br>
+
+			</div>
+
+			<h1 id="names">Local Variables</h1>
+			<div id="content1">
+				<p>
+					Variables that are declared inside a function or block are local variables. They can be used only by statements that are inside that function or block of code. Local variables are not known to functions outside their own. Following is the example using local variables:<br><br>
+
+					<strong id="text">
+					#include < iostream > <br>
+					using namespace std; <br><br>
+								 
+					int main () {<br>
+				   // Local variable declaration:<br>
+					int a, b;<br>
+					int c;<br><br>
+								 
+				   // actual initialization<br>
+					a = 10;<br>
+					b = 20;<br>
+					c = a + b;<br><br>
+								 
+					cout << c;<br><br>
+								 
+					return 0;<br>
+					}<br><br>
+
+					Output:<br><br>
+
+					30
+
+					</strong><br><br>
+				</p>
+			</div>
+
+			<h1 id="names">Global Variables</h1>
+			<div id="content1">
+				<p>
+					Global variables are defined outside of all the functions, usually on top of the program. The global variables will hold their value throughout the life-time of your program.<br><br>
+
+					A global variable can be accessed by any function. That is, a global variable is available for use throughout your entire program after its declaration. Following is the example using global and local variables:<br><br>
+
+					<strong id="text">
+					#include < iostream > <br>
+					using namespace std;<br><br>
+ 
+					// Global variable declaration:<br>
+					int g;<br><br>
+ 
+					int main () {<br>
+  					// Local variable declaration:<br>
+   					int a, b;<br><br>
+ 
+   					// actual initialization<br>
+   					a = 10;<br>
+   					b = 20;<br>
+   					g = a + b;<br><br>
+ 
+  					cout << g;<br><br>
+ 
+   					return 0;<br><br>
+   					}
+
+   					Output:<br><br>
+
+   					30
+					</strong><br><br>
+
+					A program can have same name for local and global variables but value of local variable inside a function will take preference. For example:<br><br>
+
+					<strong id="text">
+					#include < iostream ><br>
+					using namespace std;<br><br>
+ 
+					// Global variable declaration:<br>
+					int g = 20;<br><br>
+ 
+					int main () { <br>
+  					 // Local variable declaration: <br>
+  					 int g = 10;<br><br>
+ 
+   					cout << g;<br><br>
+ 
+   					return 0;<br>
+					}<br>
+
+   					Output:<br><br>
+
+   					10
+					</strong><br><br>
+				</p>
+			</div>
+
+			
+</div>
+</body>
+</html>

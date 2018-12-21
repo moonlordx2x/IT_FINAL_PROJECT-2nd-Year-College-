@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="htmlcss.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="htmlhome.html">HTMl HOME</a></li>
+		<li><a href="htmloverview.html">HTML Overview</a></li>
+		<li><a href="htmlbasic.html">HTML Basic Tags</a></li>
+		<li><a href="htmlelement.html">HTML Elements</a></li>
+		<li><a href="htmlattribute.html">HTML Attribute</a></li>
+		<li><a href="htmlformat.html">HTML Formatting</a></li>
+		<li><a href="htmlphrase.html">HTML Phrase Tags</a></li>
+		<li><a href="htmlcomment.html">HTML Comments</a></li>
+		<li><a href="" id="home">HTML Tables</a></li>
+		<li><a href="htmllist.html">HTML Lists</a></li>
+		<li><a href="htmllinks.html">HTML Text Links</a></li>
+		<li><a href="htmlblock.html">HTML Blocks</a></li>
+		<li><a href="htmlfont.html">HTML Fonts</a></li>
+		<li><a href="htmlstyle.html">HTML StyleSheet</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">HTML Tables</h1>
+			<div id="content">
+				<p>
+					The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells. <br><br>
+
+					The HTML tables are created using the < table> tag in which the < tr> tag is used to create table rows and < td> tag is used to create data cells.<br><br>
+
+					<h2>Example</h2>
+
+					<strong id="text">
+		< !DOCTYPE html> <br>
+			< html> <br>
+				< head> <br>
+					< title>HTML Tables< /title> <br>
+				< /head> <br>
+			< body> <br>
+					< table border="1"> <br><br>
+						< tr> <br>
+							< td>Row 1, Column 1< /td> <br>
+							< td>Row 1, Column 2< /td> <br>
+						< /tr> <br><br>
+						< tr> <br>
+							< td>Row 2, Column 1< /td> <br>
+							< td>Row 2, Column 2< /td> <br>
+						< /tr> <br><br>
+					< /table> <br>
+			< /body> <br>
+			< /html> <br>
+					</strong> <br><br>
+
+					This will produce following result: <br><br>
+
+						<table border="1">
+								<tr>
+								<td>Row 1, Column 1</td>
+								<td>Row 1, Column 2</td>
+								</tr>
+								<tr>
+								<td>Row 2, Column 1</td>
+								<td>Row 2, Column 2</td>
+								</tr>
+						</table> <br><br>
+
+						Here border is an attribute of < table> tag and it is used to put a border across all the cells. If you do not need a border then you can use border="0".
+				</p>
+			</div>
+
+			<h1 id="names">Table Heading</h1>
+			<div id="content">
+				<p>
+					Table heading can be defined using < th> tag. This tag will be put to replace < td> tag, which is used to represent actual data cell. Normally you will put your top row as table heading as shown below, otherwise you can use < th> element in any row.<br><br>
+
+					<h2>Example</h2>
+
+					<strong id="text">
+		< !DOCTYPE html> <br>
+				< html> <br>
+						< head> <br>
+								< title>HTML Table Header< /title> <br>
+						< /head> <br>
+					< body> <br><br>
+							< table border="1"> <br>
+								< tr> <br>
+									< th>Name< /th> <br>
+									< th>Salary< /th> <br>
+								< /tr> <br><br>
+								< tr> <br>
+									< td>Ramesh Raman< /td> <br>
+									< td>5000< /td> <br>
+								< /tr> <br><br>
+								< tr> <br>
+									< td>Shabbir Hussein< /td> <br>
+									< td>7000< /td> <br>
+								< /tr> <br><br>
+							< /table> <br>
+					< /body> <br>
+				< /html> <br>
+					</strong> <br><br>
+
+					This will produce following result: <br><br>
+
+						<table border="1">
+							<tr>
+								<th>Name</th>
+								<th>Salary</th>
+							</tr>
+							<tr>
+								<td>Ramesh Raman</td>
+								<td>5000</td>
+							</tr>
+							<tr>
+								<td>Shabbir Hussein</td>
+								<td>7000</td>
+							</tr>
+						</table>
+
+					
+					</p>
+			</div>
+
+			<h1 id="names">Table Height and Width</h1>
+			<div id="content">
+				<p>
+					You can set a table width and height using width and height attrubutes. You can specify table width or height in terms of pixels or in terms of percentage of available screen area.<br><br>
+
+					<h2>Example</h2>
+
+					<strong id="text">
+		< !DOCTYPE html> <br>
+				< html> <br>
+						< head> <br>
+								< title>HTML Table Width/Height< /title> <br>
+						< /head> <br>
+						< body> <br><br>
+								< table border="1" width="400" height="150"> <br><br>
+								< tr> <br> 
+									< td>Row 1, Column 1< /td> <br>
+									< td>Row 1, Column 2< /td> <br>
+								< /tr> <br><br>
+								< tr> <br>
+									< td>Row 2, Column 1< /td> <br>
+									< td>Row 2, Column 2< /td> <br>
+								< /tr> <br><br>
+								< /table> <br>
+						< /body> <br>
+				< /html>
+				</strong> <br><br>
+
+				This will produce following result: <br><br>
+
+				<table border="1" width="400" height="150">
+				<tr>
+				<td>Row 1, Column 1</td>
+				<td>Row 1, Column 2</td>
+				</tr>
+				<tr>
+				<td>Row 2, Column 1</td>
+				<td>Row 2, Column 2</td>
+				</tr>
+				</table>
+				</p>
+			</div> <br>
+
+</div>
+</div>
+</body>
+</html>

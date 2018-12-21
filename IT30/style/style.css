@@ -1,0 +1,192 @@
+html,body{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+body{
+	/*background-color: #056cb9;  */
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+.head{
+	height: 65px;
+	width: 100%;
+	background-color: #004883;
+	position: fixed;
+	top:0px;
+	z-index: 99;
+}
+
+#logo{
+	position: fixed;
+	top:0px;
+	left:15px;
+	height: 65px;
+	width: 65px;
+}
+
+#school{
+	position: fixed;
+	top:0px;
+	left:95px;
+	color: white;
+}
+
+.head ul{
+	position: fixed;
+	top:8px;
+	list-style-type: none;
+	left:850px;
+}
+
+.head ul li{
+	display: inline-block;
+}
+
+.head ul li a{
+	margin-left: 50px;
+	text-decoration: none;
+	color: white;
+	border-radius: 8px;
+}
+
+.head ul li a:hover{
+	background-color: #146EB4;
+	padding: 15px;
+}
+
+.main{
+	height: 100%;
+	background-color: black;
+}
+
+#backg{
+	height: 90%;
+	width: 100%;
+	opacity: 0.5;
+}
+
+.sign{
+	position: absolute;
+	top:110px;
+	left:370px;
+	color: #004883;
+	font-size: 25px;
+}
+
+.sign h1{
+	position: fixed;
+	left: 283px;
+	color: white;
+	border: 2px solid #004883;
+	border-radius: 15px;
+	background-color: #004883;
+	font-family: Arial;
+	padding: 10px;
+}
+
+#web{
+	position: absolute;
+	top:125px;
+	left:231px;
+	border: 2px solid #004883;
+	border-radius: 17px;
+	padding: 14px 0px;
+	background-color: #004883;
+}
+
+#web a{
+	text-decoration: none;
+	color: white;
+	border-radius: 17px;
+	padding: 18px;
+}
+
+.sign #web a:hover{
+	color: white;
+	background-color: #003399;
+}
+
+#first{
+	height: 620px;
+	width: 100%;
+}
+
+.foot{
+	position: absolute;
+	bottom: 0px;
+	background-color: #004883;
+	height: 70px;
+	width: 100%;
+}
+
+#mark{
+	position: absolute;
+	bottom:170px;
+	left: 558px;
+	height: 245px;
+	width: 245px
+}
+
+#cplus{
+	position: absolute;
+	bottom: 150px;
+	left:495px;
+	width: 115px;
+	height: 95px;
+}
+
+#html{
+	position: absolute;
+	bottom: 270px;
+	left: 440px;
+	width: 115px;
+	height: 95px;
+}
+
+#css{
+	position: absolute;
+	bottom: 150px;
+	left: 750px;
+	width: 115px;
+	height: 95px;
+}
+#java{
+	position: absolute;
+	bottom: 270px;
+	left:790px;
+	width: 115px;
+	height: 95px;
+}
+
+#icon{
+	position: absolute;
+	bottom: 70px;
+	left: 603px;
+	height: 170px;
+	width: 170px;
+}
+
+.sect{
+	height: 30%;
+	background-color: grey;
+}
+
+.subsection{
+	height: 70%;
+}
+
+.one{
+	background-color: #5d06e9;
+}
+
+.one h1{
+	margin: 0px;
+	position: absolute;
+	color: white;
+	font-size:180px;
+	left: 505px;
+	font-family: Arial;
+}

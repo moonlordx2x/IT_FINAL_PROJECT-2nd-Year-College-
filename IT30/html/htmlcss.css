@@ -1,0 +1,149 @@
+html,body{
+	height: 100%;
+	overflow-x: hidden;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background-color: #004d00;
+}
+
+.head{
+	height: 65px;
+	width: 100%;
+	background-color: #004d00;
+	position: fixed;
+	top:0px;
+	z-index: 99;
+}
+
+#logo{
+	position: fixed;
+	top:0px;
+	left:15px;
+	height: 65px;
+	width: 65px;
+}
+
+#school{
+	position: fixed;
+	top:0px;
+	left:95px;
+	color: white;
+}
+.active{
+	padding: 8px 16px;
+	background-color: #1d5dec;
+}
+
+.head ul{
+	position: fixed;
+	top:8px;
+	list-style-type: none;
+	left:850px;
+}
+
+
+.head ul li {
+	display: inline-block;
+	margin-left: 50px;
+	text-decoration: none;
+	border-radius: 8px;
+}
+
+.head ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+.head ul li a:hover{
+	background-color: #00b33c;
+	padding: 15px;
+	border-radius: 25px;
+}
+
+.contains{
+	border:2px solid white;
+	float: left;
+	height: 640px;
+	width: 260px;
+	/*overflow-x: hidden;
+	overflow-y: scroll;*/
+	position: fixed;
+	top:61px;
+}
+#link{
+	list-style-type: none;
+	margin:0px;
+	padding: 5px;
+	position: absolute;
+	width: 250px;
+	height: 100%;
+	background-color: #f1f1f1;
+}
+
+#link li a{
+	display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: verdana;
+}
+
+#link li a#home{
+	background-color: #004d00;
+	color: white;
+}
+
+#link li a:hover:not(#home){
+	background-color: grey;
+	color: white;
+}
+
+.main{
+	height: 635px;
+	width: 1100px;
+	background-color: #004d00;
+	position: absolute;
+	left:263px;
+	margin-right: 0px;
+	top:65px;
+	/*
+	overflow-y: scroll;
+	overflow-x: hidden;
+	*/
+}
+
+.main #home{
+	height: 85%;
+	width: 1160px;
+	background-color: #004d00;
+	color: white;
+	margin: 0px;
+}
+#names{
+	text-align: center;
+	font-size: 45px;
+	font-family: verdana;
+}
+
+#content{
+	margin-left: 200px;
+	margin-right: 240px;
+	text-align: left;
+	border:2px solid;
+	border-radius: 15px;
+	padding: 15px;
+	font-size: 23px;
+}
+
+#sample{
+	position: absolute;
+	left:250px;
+}
+
+#text{
+	color: 	yellow;
+	font-size: 25px;
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="ajava.css">
+	<style media="screen">
+		tr{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="javahome.html">JAVA HOME</a></li>
+		<li><a href="javaoverview.html">JAVA Overview</a></li>
+		<li><a href="javaenvironment.html">JAVA Environment Setup</a></li>
+		<li><a href="javabasic.html">JAVA Basic Syntax</a></li>
+		<li><a href="javaobject.html">JAVA Object & Classes</a></li>
+		<li><a href="javadata.html">JAVA Basic Data Types</a></li>
+		<li><a href="javavariable.html">JAVA Variable Types</a></li>
+		<li><a href="javamodifier.html">JAVA Modifier Types</a></li>
+		<li><a href="javaoperator.html">JAVA Basic Operators</a></li>
+		<li><a href="javaloop.html">JAVA Loop Control</a></li>
+		<li><a href="javadecision.html">JAVA Decision Making</a></li>
+		<li><a href="javanumber.html">JAVA Numbers</a></li>
+		<li><a href="" id="home">JAVA Characters</a></li>
+		<li><a href="javastring.html">JAVA Strings</a></li>
+		<li><a href="javaarray.html">JAVA Arrays</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">Java - Character Class</h1>
+			<div id="content">
+				<p>
+					Normally, when we work with characters, we use primitive data types char. <br>
+
+					<h2>Example</h2>
+
+					<strong id="text">
+						char ch = 'a'; <br><br>
+
+						// Unicode for uppercase Greek omega character<br>
+						char uniChar = '\u039A';<br><br>
+
+						// an array of chars <br>
+						char[] charArray ={ 'a', 'b', 'c', 'd', 'e' };
+					</strong><br><br>
+
+					However in development, we come across situations where we need to use objects instead of primitive data types.
+					In order to achieve this, Java provides wrapper class Character for primitive data type char. <br><br>
+
+					The Character class offers a number of useful class (i.e., static) methods for manipulating characters.
+					You can create a Character object with the Character constructor −<br><br>
+
+					<strong id="text">
+						Character ch = new Character('a');
+					</strong> <br><br>
+
+					The Java compiler will also create a Character object for you under some circumstances.
+					For example, if you pass a primitive char into a method that expects an object, the compiler automatically converts the char to a Character for you.
+					This feature is called autoboxing or unboxing, if the conversion goes the other way. <br>
+
+					<h2>Example</h2>
+					<strong id="text">
+						// Here following primitive char 'a' <br>
+						// is boxed into the Character object ch <br>
+						Character ch = 'a'; <br><br>
+
+						// Here primitive 'x' is boxed for method test, <br>
+						// return is unboxed to char 'c' <br>
+						char c = test('x');
+					</strong>
+
+				</p>
+			</div>
+
+			<h1 id="names">Escape Sequences</h1>
+			<div id="content">
+				<p>
+					A character preceded by a backslash (\) is an escape sequence and has a special meaning to the compiler. <br><br>
+
+					The newline character (\n) has been used frequently in this tutorial in
+					System.out.println() statements to advance to the next line after the string is printed. <br><br>
+
+					Following table shows the Java escape sequences − <br><br>
+
+					<table align="center" border="2px" width="650">
+										<tr>
+											<th>
+												Escape Sequence
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+
+										<tr>
+											<td>
+												\t
+											</td>
+											<td>
+												Inserts a tab in the text at this point.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												\b
+											</td>
+											<td>
+												Inserts a backspace in the text at this point.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												\n
+											</td>
+											<td>
+												Inserts a newline in the text at this point.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												\r
+											</td>
+											<td>
+												Inserts a carriage return in the text at this point.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												\f
+											</td>
+											<td>
+												Inserts a form feed in the text at this point.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												\'
+											</td>
+											<td>
+												Inserts a single quote character in the text at this point.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												\"
+											</td>
+											<td>
+												Inserts a double quote character in the text at this point.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												\\
+											</td>
+											<td>
+												Inserts a backslash character in the text at this point.
+											</td>
+										</tr>
+					</table> <br><br>
+
+					When an escape sequence is encountered in a print statement, the compiler interprets it accordingly. <br><br>
+
+					<h2>Example</h2>
+
+					If you want to put quotes within quotes, you must use the escape sequence, \", on the interior quotes − <br><br>
+
+					<strong id="text">
+						public class Test { <br><br>
+
+						public static void main(String args[]) { <br>
+							System.out.println("She said \"Hello!\" to me."); <br>
+						} <br>
+						}
+					</strong> <br><br>
+
+					This will produce the following result − <br><br>
+
+					<h2>Output</h2>
+
+					<strong id="text">
+						She said "Hello!" to me.
+					</strong>
+				</p>
+			</div>
+
+			<h1 id="names">Character Methods</h1>
+			<div id="content">
+				<p>
+					Following is the list of the important instance methods that all the subclasses of the Character class implement − <br><br>
+
+					<table align="center" border="2px" width="650">
+										<tr>
+											<th>
+												Sr.No.
+											</th>
+											<th>
+												Method & Description
+											</th>
+										</tr>
+
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												isLetter() <br><br>
+Determines whether the specified char value is a letter.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												2
+											</td>
+											<td>
+												isDigit() <br><br>
+Determines whether the specified char value is a digit.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												3
+											</td>
+											<td>
+												isWhitespace() <br><br>
+Determines whether the specified char value is white space.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												4
+											</td>
+											<td>
+												isUpperCase() <br><br>
+Determines whether the specified char value is uppercase.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												5
+											</td>
+											<td>
+												isLowerCase() <br><br>
+Determines whether the specified char value is lowercase.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												6
+											</td>
+											<td>
+												toUpperCase()  <br><br>
+	Returns the uppercase form of the specified char value.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												7
+											</td>
+											<td>
+												toLowerCase() <br><br>
+	Returns the lowercase form of the specified char value.
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												8
+											</td>
+											<td>
+												toString() <br><br>
+	Returns a String object representing the specified character value that is, a one-character string.
+											</td>
+										</tr>
+					</table> <br><br>
+
+				</p>
+			</div> <br>
+
+
+</div>
+</div>
+</body>
+</html>

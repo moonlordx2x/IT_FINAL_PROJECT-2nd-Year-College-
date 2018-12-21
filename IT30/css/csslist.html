@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="csshome.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="csshome.html">Css HOME</a></li>
+		<li><a href="cssintro.html">Css Introduction</a></li>
+		<li><a href="csssyntax.html">Css Syntax</a></li>
+		<li><a href="cssinclusion.html">Css Inclusion</a></li>
+		<li><a href="cssmeasure.html">Css Measurement Units</a></li>
+		<li><a href="cssfont.html">Css Fonts</a></li>
+		<li><a href="csstext.html">Css Text</a></li>
+		<li><a href="csslink.html">Css Links</a></li>
+		<li><a href="csstable.html">Css Tables</a></li>
+		<li><a href="cssborder.html">Css Borders</a></li>
+		<li><a href="cssmargin.html">Css Margins</a></li>
+		<li><a href="" id="home">Css Lists</a></li>
+		<li><a href="csspadding.html">Css Padding</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">CSS - Lists</h1>
+			<div id="content">
+				<p>
+					Lists are very helpful in conveying a set of either numbered or bullet points. This chapter teaches you how to control list type, position, style, etc., using CSS.
+					<br><br>
+
+					We have the following five CSS properties, which can be used to control lists:
+					<br><br>
+
+					<ul>
+						<li>The <strong id="text">list-style-type </strong>
+						allows you to control the shape or appearance of the marker.
+						</li> <br>
+
+						<li>The <strong id="text">list-style-position </strong>
+						specifies whether a long point that wraps to a second line should align with the first line or start underneath the start of the marker.
+						</li> <br>
+
+						<li>The <strong id="text">list-style-image </strong>
+						specifies an image for the marker rather than a bullet point or number.
+						</li> <br>
+
+						<li>The <strong id="text">list-style </strong>
+						serves as shorthand for the preceding properties.
+						</li> <br>
+
+						<li>The <strong id="text">marker-offset </strong>
+						specifies the distance between a marker and the text in the list.
+						</li>
+
+					</ul> <br><br>
+
+					Now, we will see how to use these properties with examples.
+				</p>
+			</div>
+
+			<h1 id="names">The list-style-type Property</h1>
+			<div id="content">
+				<p>
+					The list-style-type property allows you to control the shape or style of bullet point (also known as a marker) in the case of unordered lists and the style of numbering characters in ordered lists. <br><br>
+
+					Here are the values which can be used for an unordered list − <br><br>
+
+					<table width="600" align="center" border="1px solid">
+						<tr>
+							<th>Value</th>
+							<th>Description</th>
+						</tr>
+
+						<tr>
+							<td>none</td>
+							<td>NA</td>
+						</tr>
+
+						<tr>
+							<td>disc (default)</td>
+							<td>A filled-in circle</td>
+						</tr>
+
+						<tr>
+							<td>circle</td>
+							<td>An empty circle</td>
+						</tr>
+
+						<tr>
+							<td>square</td>
+							<td>A filled-in square</td>
+						</tr>
+					</table> <br><br>
+
+					Here are the values, which can be used for an ordered list − <br><br>
+
+					<table align="center" border="2px solid" width="700">
+						<tr>
+							<th>Value</th>
+							<th>Description</th>
+							<th>Example</th>
+						</tr>
+
+						<tr>
+							<td>decimal</td>
+							<td>Number</td>
+							<td>1,2,3,4,5</td>
+						</tr>
+
+						<tr>
+							<td>decimal-leading-zero</td>
+							<td>0 before the number</td>
+							<td>01, 02, 03, 04, 05</td>
+						</tr>
+
+						<tr>
+							<td>lower-alpha</td>
+							<td>Lowercase alphanumeric characters</td>
+							<td>a, b, c, d, e</td>
+						</tr>
+
+						<tr>
+							<td>upper-alpha</td>
+							<td>Uppercase alphanumeric characters</td>
+							<td>A, B, C, D, E</td>
+						</tr>
+
+						<tr>
+							<td>lower-roman</td>
+							<td>Lowercase Roman numerals</td>
+							<td>i, ii, iii, iv, v</td>
+						</tr>
+
+						<tr>
+							<td>upper-roman</td>
+							<td>Uppercase Roman numerals</td>
+							<td>I, II, III, IV, V</td>
+						</tr>
+
+						<tr>
+							<td>lower-greek</td>
+							<td>The marker is lower-greek</td>
+							<td>alpha, beta, gamma</td>
+						</tr>
+
+						<tr>
+							<td>lower-latin</td>
+							<td>The marker is lower-latin</td>
+							<td>a, b, c, d, e</td>
+						</tr>
+
+						<tr>
+							<td>upper-latin</td>
+							<td>The marker is upper-latin</td>
+							<td>A, B, C, D, E</td>
+						</tr>
+
+						<tr>
+							<td>hebrew</td>
+							<td>The marker is traditional Hebrew numbering</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td>armenian</td>
+							<td>The marker is traditional Armenian numbering</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td>georgian</td>
+							<td>The marker is traditional Georgian numbering</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td>cjk-ideographic</td>
+							<td>The marker is plain ideographic numbers</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td>hiragana</td>
+							<td>The marker is hiragana</td>
+							<td>a, i, u, e, o, ka, ki</td>
+						</tr>
+
+						<tr>
+							<td>katakana</td>
+							<td>The marker is katakana</td>
+							<td>A, I, U, E, O, KA, KI</td>
+						</tr>
+
+						<tr>
+							<td>hiragana-iroha</td>
+							<td>The marker is hiragana-iroha</td>
+							<td>i, ro, ha, ni, ho, he, to</td>
+						</tr>
+
+						<tr>
+							<td>katakana-iroha</td>
+							<td>The marker is katakana-iroha</td>
+							<td>I, RO, HA, NI, HO, HE, TO</td>
+						</tr>
+					</table> <br><br>
+
+					Here is an example − <br><br>
+
+					<strong id="text">
+			< html> <br>
+		   		< head>< /head> <br><br>
+		   
+				   < body> <br>
+					      < ul style="list-style-type:circle;"> <br>
+					         < li>Maths< /li> <br>
+					         < li>Social Science< /li> <br>
+					         < li>Physics< /li> <br>
+					      < /ul> <br><br> 
+					      
+					      < ul style="list-style-type:square;"> <br>
+					         < li>Maths< /li> <br>
+					         < li>Social Science< /li> <br>
+					         < li>Physics< /li> <br>
+					      < /ul> <br><br> 
+					      
+					      < ol style="list-style-type:decimal;"> <br>
+					         < li>Maths< /li> <br>
+					         < li>Social Science< /li> <br>
+					         < li>Physics< /li> <br>
+					      < /ol> <br>
+					      
+					      < ol style="list-style-type:lower-alpha;"> <br>
+					         < li>Maths< /li> <br>
+					         < li>Social Science< /li> <br>
+					         < li>Physics< /li> <br>
+					      < /ol> <br><br>
+					      
+					      < ol style="list-style-type:lower-roman;"> <br>
+					         < li>Maths< /li> <br>
+					         < li>Social Science< /li> <br>
+					         < li>Physics< /li><br>
+					      < /ol> <br>
+				   < /body> <br>
+		< /html> 
+					</strong> <br><br>
+
+					It will produce the following result − <br><br>
+
+					<ul style="list-style-type:circle;">
+				         <li>Maths</li>
+				         <li>Social Science</li>
+				         <li>Physics</li>
+				      </ul>
+				      
+				    <ul style="list-style-type:square;">
+				         <li>Maths</li>
+				         <li>Social Science</li>
+				         <li>Physics</li>
+				      </ul>
+				      
+				    <ol style="list-style-type:decimal;">
+				         <li>Maths</li>
+				         <li>Social Science</li>
+				         <li>Physics</li>
+				      </ol>
+				      
+				    <ol style="list-style-type:lower-alpha;">
+				         <li>Maths</li>
+				         <li>Social Science</li>
+				         <li>Physics</li>
+				      </ol>
+				      
+				    <ol style="list-style-type:lower-roman;">
+				         <li>Maths</li>
+				         <li>Social Science</li>
+				         <li>Physics</li>
+				      </ol>
+				</p>
+			</div>
+
+			<h1 id="names">The list-style-position Property</h1>
+			<div id="content">
+				<p>
+					The list-style-position property indicates whether the marker should appear inside or outside of the box containing the bullet points. It can have one the two values − <br><br>
+
+					<table width="650" align="center" border="2px solid">
+						<tr>
+							<th>Value</th>
+							<th>Description</th>
+						</tr>
+
+						<tr>
+							<td>none</td>
+							<td>NA</td>
+						</tr>
+
+						<tr>
+							<td>inside</td>
+							<td>If the text goes onto a second line, the text will wrap underneath the marker. It will also appear indented to where the text would have started if the list had a value of outside.</td>
+						</tr>
+
+						<tr>
+							<td>outside</td>
+							<td>If the text goes onto a second line, the text will be aligned with the start of the first line (to the right of the bullet).</td>
+						</tr>
+					</table> <br><br>
+
+					Here is an example − <br><br>
+
+					<strong id="text">
+			< html> <br>
+			   < head>< /head> <br>
+					   < body> <br>
+					      < ul style="list-style-type:circle; list-style-position:outside;"> <br>
+					         < li>Maths< /li> <br>
+					         < li>Social Science< /li> <br>
+					         < li>Physics< /li> <br>
+					      < /ul> <br><br>
+					      
+					      < ul style="list-style-type:square;list-style-position:inside;"> <br>
+					         < li>Maths< /li> <br>
+					         < li>Social Science< /li> <br>
+					         < li>Physics< /li> <br>
+					      < /ul> <br> <br>
+					      
+					      < ol style="list-style-type:decimal;list-style-position:outside;"> <br>
+					         < li>Maths< /li> <br>
+					         < li>Social Science< /li> <br>
+					         < li>Physics< /li> <br>
+					      < /ol> <br><br>
+					      
+					      < ol style="list-style-type:lower-alpha;list-style-position:inside;"> <br>
+					         < li>Maths< /li> <br> 
+					         < li>Social Science< /li> <br>
+					         < li>Physics< /li> <br>
+					      < /ol> <br>
+					   < /body>  <br>
+			   
+			< /html>
+					</strong> <br><br>
+
+					It will produce the following result − <br><br>
+
+					<ul style="list-style-type:circle; list-style-position:outside;">
+				         <li>Maths</li>
+				         <li>Social Science</li>
+				         <li>Physics</li>
+				    </ul>
+				      
+				    <ul style="list-style-type:square;list-style-position:inside;">
+				         <li>Maths</li>
+				         <li>Social Science</li>
+				         <li>Physics</li>
+				    </ul>
+				      
+				    <ol style="list-style-type:decimal;list-style-position:outside;">
+				         <li>Maths</li>
+				         <li>Social Science</li>
+				         <li>Physics</li>
+				    </ol>
+				      
+				    <ol style="list-style-type:lower-alpha;list-style-position:inside;">
+				         <li>Maths</li>
+				         <li>Social Science</li>
+				         <li>Physics</li>
+				    </ol>
+				</p>
+			</div>
+
+			
+</div>
+</div>
+</body>
+</html>

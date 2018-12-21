@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="htmlcss.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="htmlhome.html">HTMl HOME</a></li>
+		<li><a href="htmloverview.html">HTML Overview</a></li>
+		<li><a href="htmlbasic.html">HTML Basic Tags</a></li>
+		<li><a href="htmlelement.html">HTML Elements</a></li>
+		<li><a href="htmlattribute.html">HTML Attribute</a></li>
+		<li><a href="htmlformat.html">HTML Formatting</a></li>
+		<li><a href="htmlphrase.html">HTML Phrase Tags</a></li>
+		<li><a href="htmlcomment.html">HTML Comments</a></li>
+		<li><a href="htmltable.html">HTML Tables</a></li>
+		<li><a href="htmllist.html">HTML Lists</a></li>
+		<li><a href="htmllinks.html">HTML Text Links</a></li>
+		<li><a href="htmlblock.html">HTML Blocks</a></li>
+		<li><a href="htmlfont.html">HTML Fonts</a></li>
+		<li><a href="" id="home">HTML StyleSheet</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">HTML Style Sheet</h1>
+			<div id="content">
+				<p>
+					Cascading Style Sheets (CSS) describe how documents are presented on screens, in print, or perhaps how they are pronounced. W3C has actively promoted the use of style sheets on the Web since the Consortium was founded in 1994. <br><br>
+
+					Cascading Style Sheets (CSS) provide easy and effective alternatives to specify various attributes for the HTML tags. Using CSS, you can specify a number of style properties for a given HTML element. Each property has a name and a value, separated by a colon (:). Each property declaration is separated by a semi-colon (;).  <br><br>
+
+					<h2>Example</h2>
+
+					First let's consider an example of HTML document which makes use of <font> tag and associated attributes to specify text color and font size: <br><br>
+
+					<strong id="text">
+						 
+					< !DOCTYPE html> <br>
+					< html> <br>
+					< head> <br>
+					< title>HTML CSS< /title> <br>
+					< /head> <br> 
+					< body> <br>
+					< p>< font color="green" size="5">Hello, World!< /font>< /p> <br>
+					< /body> <br> 
+					< /html>
+
+					</strong><br><br>
+
+					We can re-write above example with the help of Style Sheet as follows: <br><br>
+
+					<strong id="text">
+
+					< !DOCTYPE html> <br>
+					< html> <br>
+					< head> <br>
+					< title>HTML CSS< /title> <br>
+					< /head> <br> 
+					< body> <br>
+					< p style="color:yellow;font-size:24px;">Hello, World!</p>
+					< /body> <br> 
+					< /html>
+					</strong><br><br>
+
+					This will produce following result:<br><br>
+
+					<p style="color:yellow;font-size:24px;">Hello, World!</p> <br><br>
+
+					You can use CSS in three ways in your HTML document: <br><br>
+
+					<ul type="square">
+						<li><strong id="text">External Style Sheet - </strong>Define style sheet rules in a separate .css file and then include that file in your HTML document using HTML <link> tag.</li> <br>
+
+						<li><strong id="text">Internal Style Sheet - </strong>Define style sheet rules in header section of the HTML document using < style> tag.</li> <br>
+
+						<li><strong id="text">Inline Style Sheet - </strong>Define style sheet rules directly along-with the HTML elements using style attribute.</li> <br>
+					</ul> <br>
+
+					Let's see all the three cases one by one with the help of suitable examples.
+
+				</p>
+			</div>
+
+			<h1 id="names">External Style Sheet</h1>
+			<div id="content">
+				<p>
+					If you need to use your style sheet to various pages, then its always recommended to define a common style sheet in a separate file. A cascading style sheet file will have extension as .css and it will be included in HTML files using < link> tag. <br><br>
+
+					<h2>Example</h2>
+					Consider we define a style sheet file style.css which has following rules:<br><br>
+
+					<strong id="text">
+					.yellow{ <br>
+					   color: yellow; <br>
+					} <br>
+					.fonts{ <br>
+					   font-size:20px; <br>
+					} <br>
+					.white{ <br>
+					   color:white; <br>
+					} 
+					</strong> <br><br>
+
+					Here we defined three CSS rules which will be applicable to three different classes defined for the HTML tags. I suggest you should not bother about how these rules are being defined because you will learn them while studying CSS. Now let's make use of the above external CSS file in our following HTML document: <br><br>
+
+					<strong id="text">
+	< !DOCTYPE html> <br>
+			< html> <br>
+					< head> <br>
+						< title>HTML External CSS< /title> <br>
+								< link rel="stylesheet" type="text/css" href="/html/style.css"> <br>
+					< /head> <br>
+				< body> <br><br>
+						< p class="yellow">This is yellow< /p> <br><br>
+
+						< p class="fonts">This is thick< /p> <br><br>
+
+						< p class="white">This is white< /p> <br><br>
+
+						< p class="thick white">This is thick and white< /p> <br><br>
+				< /body><br>
+			< /html>
+					</strong> <br><br>
+
+					This will produce following result: <br><br>
+
+					<p style="color:yellow">This is yellow</p>
+
+					<p style="font-size: 20px">This is thick</p>
+
+					<p style="color:white">This is white</p>
+
+					<p style="color:white;font-size: 20px">This is thick and white</p>
+				</p>
+			</div>
+
+			<h1 id="names">Internal Style Sheet</h1>
+			<div id="content">
+				<p>
+					If you want to apply Style Sheet rules to a single document only then you can include those rules in header section of the HTML document using < style> tag.
+					<br><br>
+
+					Rules defined in internal style sheet overrides the rules defined in an
+					external CSS file.<br>
+
+					<h2>Example</h2>
+					Let's re-write above example once again, but here we will write style sheet rules in the same HTML document using < style> tag: <br><br>
+
+					<strong id="text">
+
+					<!DOCTYPE html>
+						< html> <br>
+						< head> <br>
+						< title>HTML Internal CSS< /title> <br>
+						< style type="text/css"> <br>
+						.yellow{ <br>
+						   color: yellow; <br>
+						} <br>
+						.thick{ <br>
+						   font-size:20px; <br>
+						} <br>
+						.white{ <br>
+						   color:white; <br>
+						} <br>
+						< /style> <br> <br>
+						< /head> <br>
+						< body> <br> <br>
+						< p class="yellow">This is yellow< /p> <br> <br>
+
+						< p class="thick">This is thick< /p> <br> <br>
+
+						< p class="white">This is white< /p> <br> <br>
+
+						< p class="thick white">This is thick and white< /p> <br>
+						< /body> <br>
+						< /html>
+
+						</strong> <br> <br>
+
+						This will produce following result:
+
+						<p style="color:yellow">This is yellow</p>
+
+						<p style="font-size: 20px">This is thick</p>
+
+						<p style="color:white">This is white</p>
+
+						<p style="color:white;font-size: 20px">This is thick and white</p>
+				</p>
+			</div>
+
+			<h1 id="names">Inline Style Sheet</h1>
+			<div id="content">
+				<p>
+					You can apply style sheet rules directly to any HTML element using style attribute of the relevant tag. This should be done only when you are interested to make a particular change in any HTML element only.
+					<br><br>
+
+					Rules defined inline with the element overrides the rules defined in an external CSS file as well as the rules defined in < style> element.<br>
+
+					<h2>Example</h2>
+					Let's re-write above example once again, but here we will write style sheet rules along with the HTML elements using style attribute of those elements.<br><br>
+
+					<strong id="text">
+
+					<!DOCTYPE html>
+						< html> <br>
+						< head> <br>
+						< title>HTML Inline CSS< /title> <br>
+						< /head> <br>
+						< body> <br> <br>
+						< p style="color:yellow;">This is yellow</p> <br> <br>
+
+						< p style="font-size:20px;">This is thick</p><br> <br>
+
+						< p style="color:white;">This is white</p><br> <br>
+
+						< p style="color:white;font-size:20px;">This is thick and white</p><br>
+
+						< /body> <br>
+						< /html>
+
+						</strong> <br> <br>
+
+						This will produce following result:
+
+						<p style="color:yellow">This is yellow</p>
+
+						<p style="font-size: 20px">This is thick</p>
+
+						<p style="color:white">This is white</p>
+
+						<p style="color:white;font-size: 20px">This is thick and white</p>
+				</p>
+			</div>
+
+			
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="ajava.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="javahome.html">JAVA HOME</a></li>
+		<li><a href="javaoverview.html">JAVA Overview</a></li>
+		<li><a href="javaenvironment.html">JAVA Environment Setup</a></li>
+		<li><a href="javabasic.html">JAVA Basic Syntax</a></li>
+		<li><a href="javaobject.html">JAVA Object & Classes</a></li>
+		<li><a href="" id="home">JAVA Basic Data Types</a></li>
+		<li><a href="javavariable.html">JAVA Variable Types</a></li>
+		<li><a href="javamodifier.html">JAVA Modifier Types</a></li>
+		<li><a href="javaoperator.html">JAVA Basic Operators</a></li>
+		<li><a href="javaloop.html">JAVA Loop Control</a></li>
+		<li><a href="javadecision.html">JAVA Decision Making</a></li>
+		<li><a href="javanumber.html">JAVA Numbers</a></li>
+		<li><a href="javacharacter.html">JAVA Characters</a></li>
+		<li><a href="javastring.html">JAVA Strings</a></li>
+		<li><a href="javaarray.html">JAVA Arrays</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">Java - Basic Datatypes</h1>
+			<div id="content">
+				<p>
+					Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in the memory. <br><br>
+
+					Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals, or characters in these variables. <br><br>
+
+					There are two data types available in Java − <br><br>
+
+					<ul type="square">
+						<li>Primitive Data Types</li> <br>
+						<li>Reference/Object Data Types</li>
+					</ul>
+				</p>
+			</div>
+
+			<h1 id="names">Primitive Data Types</h1>
+			<div id="content">
+				<p>
+					There are eight primitive datatypes supported by Java. Primitive datatypes are predefined by the language and named by a keyword. Let us now look into the eight primitive data types in detail. <br>
+
+					<h2>byte</h2>
+
+					<ul type="square">
+						<li>Byte data type is an 8-bit signed two's complement integer</li> <br>
+						<li>Minimum value is -128 (-2^7)</li> <br>
+						<li>Maximum value is 127 (inclusive)(2^7 -1)</li> <br>
+						<li>Default value is 0</li> <br>
+						<li>Byte data type is used to save space in large arrays, mainly in place of integers, since a byte is four times smaller than an integer.</li> <br>
+						<li>Example: byte a = 100, byte b = -50</li>
+					</ul><br>
+
+					<h2>short</h2>
+
+					<ul type="square">
+						<li>Short data type is a 16-bit signed two's complement integer</li> <br>
+						<li>Minimum value is -32,768 (-2^15)</li> <br>
+						<li>Maximum value is 32,767 (inclusive) (2^15 -1)</li> <br>
+						<li>Short data type can also be used to save memory as byte data type. A short is 2 times smaller than an integer</li> <br>
+						<li>Default value is 0.</li> <br>
+						<li>Example: short s = 10000, short r = -20000</li>
+					</ul><br>
+
+					<h2>int</h2>
+
+					<ul type="square">
+						<li>Int data type is a 32-bit signed two's complement integer.</li> <br>
+						<li>Minimum value is - 2,147,483,648 (-2^31)</li> <br>
+						<li>Maximum value is 2,147,483,647(inclusive) (2^31 -1)</li> <br>
+						<li>Integer is generally used as the default data type for integral values unless there is a concern about memory.</li> <br>
+						<li>The default value is 0</li> <br>
+						<li>Example: int a = 100000, int b = -200000</li>
+					</ul><br>
+
+					<h2>long</h2>
+
+					<ul type="square">
+						<li>Long data type is a 64-bit signed two's complement integer</li> <br>
+						<li>Minimum value is -9,223,372,036,854,775,808(-2^63)</li> <br>
+						<li>Maximum value is 9,223,372,036,854,775,807 (inclusive)(2^63 -1)</li> <br>
+						<li>This type is used when a wider range than int is needed</li> <br>
+						<li>Default value is 0L</li> <br>
+						<li>Example: long a = 100000L, long b = -200000L</li>
+					</ul><br>
+
+					<h2>float</h2>
+
+					<ul type="square">
+						<li>Float data type is a single-precision 32-bit IEEE 754 floating point</li> <br>
+						<li>Float is mainly used to save memory in large arrays of floating point numbers</li> <br>
+						<li>Default value is 0.0f</li> <br>
+						<li>Float data type is never used for precise values such as currency</li> <br>
+						<li>Example: float f1 = 234.5f</li> <br>
+					</ul><br>
+
+					<h2>double</h2>
+
+					<ul type="square">
+						<li>double data type is a double-precision 64-bit IEEE 754 floating point</li> <br>
+						<li>This data type is generally used as the default data type for decimal values, generally the default choice</li> <br>
+						<li>Double data type should never be used for precise values such as currency</li> <br>
+						<li>Default value is 0.0d</li> <br>
+						<li>Example: double d1 = 123.4</li> <br>
+					</ul><br>
+
+					<h2>boolean</h2>
+
+					<ul type="square">
+						<li>boolean data type represents one bit of information</li> <br>
+						<li>There are only two possible values: true and false</li> <br>
+						<li>This data type is used for simple flags that track true/false conditions</li> <br>
+						<li>Default value is false</li> <br>
+						<li>Example: boolean one = true</li> <br>
+					</ul><br>
+
+					<h2>char</h2>
+
+					<ul type="square">
+						<li>char data type is a single 16-bit Unicode character</li> <br>
+						<li>Minimum value is '\u0000' (or 0)</li> <br>
+						<li>Maximum value is '\uffff' (or 65,535 inclusive)</li> <br>
+						<li>Char data type is used to store any character</li> <br>
+						<li>Example: char letterA = 'A'</li> <br>
+					</ul><br>
+				</p>
+			</div>
+
+			<h1 id="names">Java Literals</h1>
+			<div id="content">
+				<p>
+					A literal is a source code representation of a fixed value. They are represented directly in the code without any computation. <br><br>
+
+					Literals can be assigned to any primitive type variable. For example −  <br><br>
+
+					<strong id="text">
+						byte a = 68; <br>
+						char a = 'A'
+					</strong><br><br>
+
+					byte, int, long, and short can be expressed in decimal(base 10), hexadecimal(base 16) or octal(base 8) number systems as well. <br><br>
+
+					Prefix 0 is used to indicate octal, and prefix 0x indicates hexadecimal when using these number systems for literals. For example −  <br><br>
+
+					<strong id="text">
+						int decimal = 100; <br>
+						int octal = 0144; <br>
+						int hexa =  0x64;
+					</strong><br><br>
+
+					String literals in Java are specified like they are in most other languages by enclosing a sequence of characters between a pair of double quotes. Examples of string literals are − <br>
+
+					<h2>Example</h2>
+
+					<strong id="text">
+						"Hello World" <br>
+						"two\nlines" <br>
+						"\"This is in quotes\""
+					</strong><br><br>
+
+					String and char types of literals can contain any Unicode characters. For example −
+					<br><br>
+
+					<strong id="text">
+						char a = '\u0001'; <br>
+						String a = "\u0001";
+					</strong><br><br>
+
+					Java language supports few special escape sequences for String and char literals as well. They are − <br><br>
+
+					<table align="center" border="2" width="600">
+						<tr align="center">
+						<th>Notation</th>
+						<th>Character represented</th>
+						</tr>
+
+						<tr align="center">
+							<td>\n</td>
+							<td>Newline (0x0a)</td>
+						</tr>
+
+						<tr align="center">
+							<td>\r</td>
+							<td>Carriage return (0x0d)</td>
+						</tr>
+
+						<tr align="center">
+							<td>\f</td>
+							<td>Formfeed (0x0c)</td>
+						</tr>
+
+						<tr align="center">
+							<td>\b</td>
+							<td>Backspace (0x08)</td>
+						</tr>
+
+						<tr align="center">
+							<td>\s</td>
+							<td>Space (0x20)</td>
+						</tr>
+
+						<tr align="center">
+							<td>\t</td>
+							<td>tab</td>
+						</tr>
+
+						<tr align="center">
+							<td>\"</td>
+							<td>Double quote</td>
+						</tr>
+
+						<tr align="center">
+							<td>\'</td>
+							<td>Single quote</td>
+						</tr>
+
+						<tr align="center">
+							<td>\\</td>
+							<td>backslash</td>
+						</tr>
+
+						<tr align="center">
+							<td>\ddd</td>
+							<td>Octal character (ddd)</td>
+						</tr>
+
+						<tr align="center">
+							<td>\uxxxx</td>
+							<td>Hexadecimal UNICODE character (xxxx)</td>
+						</tr>
+					</table>
+				</p>
+			</div> <br>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+html,body{
+	height: 100%;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+.head{
+	height: 65px;
+	width: 100%;
+	background-color: #004883;
+	position: fixed;
+	top:0px;
+	z-index: 99;
+}
+
+#logo{
+	position: fixed;
+	top:0px;
+	left:15px;
+	height: 65px;
+	width: 65px;
+}
+
+#school{
+	position: fixed;
+	top:0px;
+	left:95px;
+	color: white;
+}
+.active{
+	padding: 8px 16px;
+	background-color: #1d5dec;
+}
+
+.head ul{
+	position: fixed;
+	top:8px;
+	list-style-type: none;
+	left:850px;
+}
+
+.head ul li{
+	display: inline-block;
+}
+
+.head ul li a{
+	margin-left: 50px;
+	text-decoration: none;
+	color: white;
+	border-radius: 8px;
+}
+
+.head ul li a:hover:not(.active){
+	background-color: #146EB4;
+	padding: 15px;
+}

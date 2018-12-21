@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="c++array.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="c++home.html">C++ HOME</a></li>
+		<li><a href="c++overview.html">C++ Overview</a></li>
+		<li><a href="c++environment.html">C++ Environment</a></li>
+		<li><a href="c++basic.html">C++ Basic Syntax</a></li>
+		<li><a href="c++comment.html">C++ Comments</a></li>
+		<li><a href="c++data.html">C++ Data Types</a></li>
+		<li><a href="c++variable.html">C++ Variables Types</a></li>
+		<li><a href="c++scope.html">C++ Variables Scope</a></li>
+		<li><a href="c++contant.html">C++ Contants/Literals</a></li>
+		<li><a href="c++modifier.html">C++ Modifier Types</a></li>
+		<li><a href="c++storage.html">C++ Storage Classes</a></li>
+		<li><a href="c++operator.html">C++ Operators</a></li>
+		<li><a href="c++loop.html">C++ Loop Types</a></li>
+		<li><a href="c++decision.html">C++ Decision Making</a></li>
+		<li><a href="c++function.html">C++ Functions</a></li>
+		<li><a href="c++number.html">C++ Numbers</a></li>
+		<li><a href="" id="home">C++ Arrays</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">C++ Arrays</h1>
+			<div id="content1">
+				<p>
+				C++ provides a data structure, the array, which stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type. <br><br>
+
+				Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables. A specific element in an array is accessed by an index. <br><br>
+
+				All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element.<br><br>
+				</p>	
+			</div>
+
+			<h1 id="names">Declaring Arrays</h1>
+			<div id="content1">
+				<p>
+					To declare an array in C++, the programmer specifies the type of the elements and the number of elements required by an array as follows:<br><br>
+
+					<strong id="text">
+					type arrayName [ arraySize ];
+					</strong>  <br> <br>
+
+					This is called a single-dimension array. The arraySize must be an integer constant greater than zero and type can be any valid C++ data type. For example, to declare a 10-element array called balance of type double, use this statement:<br><br>
+
+					<strong id="text">
+					double balance[10];
+					</strong>
+				</p>
+			</div>
+
+			<h1 id="names">Initializing Arrays</h1>
+			<div id="content1">
+				<p>
+				You can initialize C++ array elements either one by one or using a single statement as follows:<br><br>
+				
+				<strong id="text">
+					double balance[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};
+				</strong><br><br>
+
+				The number of values between braces { } can not be larger than the number of elements that we declare for the array between square brackets [ ]. Following is an example to assign a single element of the array: <br><br>
+
+				If you omit the size of the array, an array just big enough to hold the initialization is created. Therefore, if you write: <br><br>
+
+				<strong id="text">
+					double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};
+				</strong><br><br>
+
+				You will create exactly the same array as you did in the previous example. <br><br>
+
+				<strong id="text">
+					balance[4] = 50.0;
+				</strong>
+
+				The above statement assigns element number 5th in the array a value of 50.0. Array with 4th index will be 5th, i.e., last element because all arrays have 0 as the index of their first element which is also called base index. Following is the pictorial representaion of the same array we discussed above: <br><br>
+
+				<table align="center" width="700" border="2">
+					<tr>
+						<th></th>
+						<th>0</th>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>4</th>
+					</tr>
+
+					<tr>
+						<th>balance</th>
+						<th>1000.0</th>
+						<th>2.0</th>
+						<th>3.4</th>
+						<th>7.0</th>
+						<th>50.0</th>
+					</tr>
+				</table>
+				</p>
+			</div>
+
+			<h1 id="names">Accessing Array Elements</h1>
+			<div id="content1">
+				<p>
+					An element is accessed by indexing the array name. This is done by placing the index of the element within square brackets after the name of the array. For example:<br><br>
+
+					<strong id="text">
+					double salary = balance[9];
+					</strong><br><br>
+
+					The above statement will take 10th element from the array and assign the value to salary variable. Following is an example, which will use all the above-mentioned three concepts viz. declaration, assignment and accessing arrays:<br><br>
+
+					<strong id="text">
+					#include < iostream> <br>
+					using namespace std; <br><br>
+					 
+					#include < iomanip> <br>
+					using std::setw; <br><br>
+					 
+					int main () { <br>
+					   int n[ 10 ]; // n is an array of 10 integers <br><br>
+					 
+					   // initialize elements of array n to 0      <br>     
+					   for ( int i = 0; i < 10; i++ ) { <br>
+					      n[ i ] = i + 100; // set element at location i to i + 100 <br>
+					   } <br><br>
+						
+					   cout << "Element" << setw( 13 ) << "Value" << endl; <br><br>
+					 
+					   // output each array element's value             <br>          
+					   for ( int j = 0; j < 10; j++ ) { <br>
+					      cout << setw( 7 )<< j << setw( 13 ) << n[ j ] << endl; <br>
+					   }  <br><br>
+					 
+					   return 0; <br>
+					}
+					</strong> <br><br>
+
+					This program makes use of setw() function to format the output. When the above code is compiled and executed, it produces the following result: <br><br>
+
+					<table width="700" align="center">
+						<tr>
+							<th>Element  </th>
+							<th>Value</th>
+						</tr>
+
+						<tr>
+							<td>0</td>
+							<td>100</td>
+						</tr>
+
+						<tr>
+							<td>1</td>
+							<td>101</td>
+						</tr>
+
+						<tr>
+							<td>2</td>
+							<td>102</td>
+						</tr>
+
+						<tr>
+							<td>3</td>
+							<td>103</td>
+						</tr>
+
+						<tr>
+							<td>4</td>
+							<td>104</td>
+						</tr>
+						
+						<tr>
+							<td>5</td>
+							<td>105</td>
+						</tr>
+
+						<tr>
+							<td>6</td>
+							<td>106</td>
+						</tr>
+
+						<tr>
+							<td>7</td>
+							<td>107</td>
+						</tr>
+
+						<tr>
+							<td>8</td>
+							<td>108</td>
+						</tr>
+
+						<tr>
+							<td>9</td>
+							<td>109</td>
+						</tr>
+					</table>
+				</p>
+			</div>
+
+			<h1 id="names">C++ Arrays in Detail</h1>
+			<div id="content1">
+				<p>
+					Arrays are important to C++ and should need lots of more detail. There are following few important concepts, which should be clear to a C++ programmer: <br><br>
+
+					<table align="center" width="700" border="2px">
+						<tr>
+							<th>Concept</th>
+							<th>Description</th>
+						</tr>
+
+						<tr>
+							<td>Multi-dimensional arrays</td>
+							<td>C++ supports multidimensional arrays. The simplest form of the multidimensional array is the two-dimensional array.</td>
+						</tr>
+
+						<tr>
+							<td>Pointer to an array</td>
+							<td>You can generate a pointer to the first element of an array by simply specifying the array name, without any index.</td>
+						</tr>
+
+						<tr>
+							<td>Passing arrays to functions</td>
+							<td>You can pass to the function a pointer to an array by specifying the array's name without an index.</td>
+						</tr>
+
+						<tr>
+							<td>Return array from functions</td>
+							<td>C++ allows a function to return an array.</td>
+						</tr>
+					</table>
+				</p>
+			</div>	
+</div>
+</body>
+</html>

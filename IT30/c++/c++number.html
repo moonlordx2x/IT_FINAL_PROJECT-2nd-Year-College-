@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="c++number.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="c++home.html">C++ HOME</a></li>
+		<li><a href="c++overview.html">C++ Overview</a></li>
+		<li><a href="c++environment.html">C++ Environment</a></li>
+		<li><a href="c++basic.html">C++ Basic Syntax</a></li>
+		<li><a href="c++comment.html">C++ Comments</a></li>
+		<li><a href="c++data.html">C++ Data Types</a></li>
+		<li><a href="c++variable.html">C++ Variables Types</a></li>
+		<li><a href="c++scope.html">C++ Variables Scope</a></li>
+		<li><a href="c++contant.html">C++ Contants/Literals</a></li>
+		<li><a href="c++modifier.html">C++ Modifier Types</a></li>
+		<li><a href="c++storage.html">C++ Storage Classes</a></li>
+		<li><a href="c++operator.html">C++ Operators</a></li>
+		<li><a href="c++loop.html">C++ Loop Types</a></li>
+		<li><a href="c++decision.html">C++ Decision Making</a></li>
+		<li><a href="c++function.html">C++ Functions</a></li>
+		<li><a href="" id="home">C++ Numbers</a></li>
+		<li><a href="c++array.html">C++ Arrays</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">Numbers in C++</h1>
+			<div id="content1">
+				<p>
+					Normally, when we work with Numbers, we use primitive data types such as int, short, long, float and double, etc. The number data types, their possible values and number ranges have been explained while discussing C++ Data Types. <br><br>
+				</p>	
+			</div>
+
+			<h1 id="names">Defining Numbers in C++</h1>
+			<div id="content1">
+				<p>
+					You have already defined numbers in various examples given in previous chapters. Here is another consolidated example to define various types of numbers in C++: <br><br>
+
+					<strong id="text">
+					#include < iostream> <br>
+					using namespace std;  <br> <br>
+					 
+					int main () {  <br>
+					   // number definition:  <br>
+					   short  s;  <br>
+					   int    i;  <br>
+					   long   l;  <br>
+					   float  f;  <br>
+					   double d;  <br> <br>
+					   
+					   // number assignments;  <br>
+					   s = 10;        <br>
+					   i = 1000;      <br>
+					   l = 1000000;   <br>
+					   f = 230.47;    <br>
+					   d = 30949.374;  <br> <br> 
+					   
+					   // number printing; <br>
+					   cout << "short  s :" << s << endl;  <br>
+					   cout << "int    i :" << i << endl; <br>
+					   cout << "long   l :" << l << endl;  <br>
+					   cout << "float  f :" << f << endl;  <br>
+					   cout << "double d :" << d << endl;  <br> <br>
+					 
+					   return 0; <br>
+					}
+					</strong>  <br> <br>
+
+					When the above code is compiled and executed, it produces the following result:<br><br>
+
+					<strong id="text">
+					short  s :10 <br>
+					int    i :1000  <br>
+					long   l :1000000 <br>
+					float  f :230.47 <br>
+					double d :30949.4 <br>
+					</strong>
+				</p>
+			</div>
+
+			<h1 id="names">Math Operations in C++</h1>
+			<div id="content1">
+				<p>
+				In addition to the various functions you can create, C++ also includes some useful functions you can use. These functions are available in standard C and C++ libraries and called built-in functions. These are functions that can be included in your program and then use. <br><br>
+
+				C++ has a rich set of mathematical operations, which can be performed on various numbers. Following table lists down some useful built-in mathematical functions available in C++. <br><br>
+
+				To utilize these functions you need to include the math header file <cmath>.
+				<br><br>
+
+				<table align="center" width="700" border="2px">
+					<tr>
+						<th>S.N.</th>
+						<th>Function & Purpose</th>
+					</tr>
+
+					<tr>
+						<td>1</td>
+						<td>double cos(double);
+						This function takes an angle (as a double) and returns the cosine.</td>
+					</tr>
+
+					<tr>
+						<td>2</td>
+						<td>double sin(double);
+						This function takes an angle (as a double) and returns the sine.</td>
+					</tr>
+
+					<tr>
+						<td>3</td>
+						<td>double tan(double);
+						This function takes an angle (as a double) and returns the tangent.</td>
+					</tr>
+
+					<tr>
+						<td>4</td>
+						<td>double log(double);
+						This function takes a number and returns the natural log of that number.</td>
+					</tr>
+
+					<tr>
+						<td>5</td>
+						<td>double pow(double, double);
+						The first is a number you wish to raise and the second is the power you wish to raise it t</td>
+					</tr>
+
+					<tr>
+						<td>6</td>
+						<td>double hypot(double, double);
+						If you pass this function the length of two sides of a right triangle, it will return you the length of the hypotenuse.</td>
+					</tr>
+
+					<tr>
+						<td>7</td>
+						<td>double sqrt(double);
+						You pass this function a number and it gives you this square root.</td>
+					</tr>
+
+					<tr>
+						<td>8</td>
+						<td>int abs(int);
+						This function returns the absolute value of an integer that is passed to it.</td>
+					</tr>
+
+					<tr>
+						<td>9</td>
+						<td>double fabs(double);
+						This function returns the absolute value of any decimal number passed to it.</td>
+					</tr>
+
+					<tr>
+						<td>10</td>
+						<td>double floor(double);
+						Finds the integer which is less than or equal to the argument passed to it.</td>
+					</tr>
+				</table> <br><br>
+
+				Following a simple example to show few of the mathematical operations: <br><br>
+
+				<strong id="text">
+				#include < iostream> <br>
+				#include < cmath> <br>
+				using namespace std; <br><br>
+				  
+				int main () { <br>
+				   // number definition: <br>
+				   short  s = 10;  <br>
+				   int    i = -1000; <br>
+				   long   l = 100000; <br>
+				   float  f = 230.47; <br>
+				   double d = 200.374; <br><br>
+
+				   // mathematical operations; <br>
+				   cout << "sin(d) :" << sin(d) << endl; <br>
+				   cout << "abs(i)  :" << abs(i) << endl; <br>
+				   cout << "floor(d) :" << floor(d) << endl; <br>
+				   cout << "sqrt(f) :" << sqrt(f) << endl; <br>
+				   cout << "pow( d, 2) :" << pow(d, 2) << endl; <br><br>
+				 
+				   return 0; <br>
+				}
+				</strong> <br><br>
+
+				When the above code is compiled and executed, it produces the following result:  <br><br>
+
+				<strong id="text">
+				sign(d) :-0.634939 <br>
+				abs(i)  :1000 <br>
+				floor(d) :200 	<br>
+				sqrt(f) :15.1812 <br>
+				pow( d, 2 ) :40149.7 
+				</strong> <br><br>
+				</p>
+			</div>
+
+			<h1 id="names">Random Numbers in C++</h1>
+			<div id="content1">
+				<p>
+					There are many cases where you will wish to generate a random number. There are actually two functions you will need to know about random number generation. The first is rand(), this function will only return a pseudo random number. The way to fix this is to first call the srand() function. <br><br>
+ 
+					Following is a simple example to generate few random numbers. This example makes use of time() function to get the number of seconds on your system time, to randomly seed the rand() function: <br><br>
+
+					<strong id="text">
+					#include < iostream> <br>
+					#include < ctime> <br>
+					#include < cstdlib> <br><br>
+
+					using namespace std;<br><br>
+					 
+					int main () { <br>
+					   int i,j; <br><br>
+					 
+					   // set the seed <br>
+					   srand( (unsigned)time( NULL ) ); <br><br>
+ 
+					   /* generate 10  random numbers. */ <br>
+					   for( i = 0; i < 10; i++ ) { <br>
+					      // generate actual random number <br>
+					      j= rand(); <br>
+					      cout <<" Random Number : " << j << endl; <br>
+					   } <br><br>
+
+					   return 0; <br>
+					}
+					</strong><br><br>
+
+					When the above code is compiled and executed, it produces the following result: <br><br>
+
+					<strong id="text">
+					 Random Number : 1748144778 <br>
+					 Random Number : 630873888 <br>
+					 Random Number : 2134540646 <br>
+					 Random Number : 219404170 <br>
+					 Random Number : 902129458 <br>
+					 Random Number : 920445370 <br>
+					 Random Number : 1319072661 <br>
+					 Random Number : 257938873 <br>
+					 Random Number : 1256201101 <br>
+					 Random Number : 580322989 
+					</strong>
+				</p>
+			</div>
+</div>
+</body>
+</html>

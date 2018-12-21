@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="csshome.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="csshome.html">Css HOME</a></li>
+		<li><a href="cssintro.html">Css Introduction</a></li>
+		<li><a href=""  id="home">Css Syntax</a></li>
+		<li><a href="cssinclusion.html">Css Inclusion</a></li>
+		<li><a href="cssmeasure.html">Css Measurement Units</a></li>
+		<li><a href="cssfont.html">Css Fonts</a></li>
+		<li><a href="csstext.html">Css Text</a></li>
+		<li><a href="csslink.html">Css Links</a></li>
+		<li><a href="csstable.html">Css Tables</a></li>
+		<li><a href="cssborder.html">Css Borders</a></li>
+		<li><a href="cssmargin.html">Css Margins</a></li>
+		<li><a href="csslist.html">Css Lists</a></li>
+		<li><a href="csspadding.html">Css Padding</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">CSS - Syntax</h1>
+			<div id="content">
+				<p>
+				A CSS comprises of style rules that are interpreted by the browser and then applied to the corresponding elements in your document. A style rule is made of three parts -<br><br>
+
+				<ul>
+					<li> <strong id="text">Selector</strong> - A selector is an HTML tag at which a style will be applied. This could be any tag like < h1> or < table> etc.</li><br>
+
+					<li> <strong id="text">Property</strong> - A property is a type of attribute of HTML tag. Put simply, all the HTML attributes are converted into CSS properties. They could be color, border etc.</li><br>
+
+					<li> <strong id="text">Value</strong> - Values are assigned to properties. For example, color property can have value either red or #F1F1F1 etc.</li>
+				</ul>  <br><br>
+
+				Example: You can define a table border as follows - <br><br>
+
+				<strong id="text"> table{ border :1px solid #C00; }</strong> <br><br>
+
+				Here table is a selector and border is a property and given value 1px solid #C00 is the value of that property. <br><br>
+
+				You can define selectors in various simple ways based on your comfort. Let me put these selectors one by one.
+			</div>
+
+			<h1 id="names">The Type Selectors</h1>
+			<div id="content">
+				<p>
+					This is the same selector we have seen above. Again, one more example to give a color to all level 1 headings:<br> <br>
+
+					<strong id="text">
+					h1 { <br>
+   					color: #36CFFF; <br>
+					}
+					</strong>
+				</p>
+			</div>
+
+			<h1 id="names">The Universal Selectors</h1>
+			<div id="content">
+				<p>
+					Rather than selecting elements of a specific type, the universal selector quite simply matches the name of any element type -<br> <br>
+
+					<strong id="text">
+					* { <br>
+					   color: #000000; <br>
+					}
+					</strong> <br><br>
+
+					This rule renders the content of every element in our document in black.
+				</p>
+			</div>
+
+			<h1 id="names">The Descendant Selectors</h1>
+			<div id="content">
+				<p>
+					Suppose you want to apply a style rule to a particular element only when it lies inside a particular element. As given in the following example, style rule will apply to < em> element only when it lies inside < ul> tag.<br> <br>
+
+					<strong id="text">
+					ul em { <br>
+					   color: #000000; <br>
+					}
+					</strong> <br><br>
+				</p>
+			</div>
+
+			<h1 id="names">The Class Selectors</h1>
+			<div id="content">
+				<p>
+					You can define style rules based on the class attribute of the elements. All the elements having that class will be formatted according to the defined rule.<br> <br>
+
+					<strong id="text">
+					.black { <br>
+					   color: #000000; <br>
+					}
+					</strong> <br><br>
+
+					This rule renders the content in black for every element with class attribute set to black in our document. You can make it a bit more particular. For example: <br><br>
+
+					<strong id="text">
+					h1.black { <br>
+					   color: #000000;  <br>
+					}
+					</strong> <br><br>
+
+					This rule renders the content in black for only < h1> elements with class attribute set to black. <br><br>
+
+					You can apply more than one class selectors to given element. Consider the following example: <br><br>
+
+					<strong id="text">
+					< p class="center bold"><br>
+					   This para will be styled by the classes center and bold.
+					</p>
+					</strong> <br><br>
+				</p>
+			</div>
+
+			<h1 id="names">The ID Selectors</h1>
+			<div id="content">
+				<p>
+					You can define style rules based on the id attribute of the elements. All the elements having that id will be formatted according to the defined rule.<br> <br>
+
+					<strong id="text">
+					#black { <br>
+					   color: #000000; <br>
+					}
+					</strong> <br><br>
+
+					This rule renders the content in black for every element with id attribute set to black in our document. You can make it a bit more particular. For example- <br><br>
+
+					<strong id="text">
+					h1#black { <br>
+					   color: #000000;  <br>
+					}
+					</strong> <br><br>
+
+					This rule renders the content in black for only < h1> elements with id attribute set to black. <br><br>
+
+					The true power of id selectors is when they are used as the foundation for descendant selectors, For example: <br><br>
+
+					<strong id="text">
+					#black h2 { <br>
+					   color: #000000;  <br>
+					}
+					</strong> <br><br>
+
+					In this example all level 2 headings will be displayed in black color when those headings will lie with in tags having id attribute set to black.
+				</p>
+			</div>
+
+			<h1 id="names">The Child Selectors</h1>
+			<div id="content">
+				<p>
+					You have seen the descendant selectors. There is one more type of selector, which is very similar to descendants but have different functionality. Consider the following example -<br> <br>
+
+					<strong id="text">
+					body > p { <br>
+					   color: #000000;  <br>
+					}
+					</strong> <br><br>
+
+					This rule will render all the paragraphs in black if they are direct child of <body> element. Other paragraphs put inside other elements like < div> or < td> would not have any effect of this rule.
+				</p>
+			</div>
+
+			<h1 id="names">The Attribute Selectors</h1>
+			<div id="content">
+				<p>
+					You can also apply styles to HTML elements with particular attributes. The style rule below will match all the input elements having a type attribute with a value of text  -<br> <br>
+
+					<strong id="text">
+					input[type = "text"]{ <br>
+					   color: #000000;  <br>
+					}
+					</strong> <br><br>
+
+					The advantage to this method is that the < input type = "submit" /> element is unaffected, and the color applied only to the desired text fields. <br><br>
+
+					There are following rules applied to attribute selector.<br><br>
+
+					<ul>
+						<li><strong id="text">p[lang]</strong> - Selects all paragraph elements with a lang attribute.</li> <br>
+
+						<li><strong id="text">p[lang="fr"]</strong> -Selects all paragraph elements whose lang attribute has a value of exactly "fr".</li> <br> 
+
+						<li><strong id="text">p[lang~="fr"]</strong> - Selects all paragraph elements whose lang attribute contains the word "fr".</li> <br>
+
+						<li><strong id="text">p[lang|="en"]</strong> -Selects all paragraph elements whose lang attribute contains values that are exactly "en", or begin with "en-".</li> <br>
+					</ul>
+				</p>
+			</div>
+
+			<h1 id="names">Multiple Style Rules</h1>
+			<div id="content">
+				<p>
+					You may need to define multiple style rules for a single element. You can define these rules to combine multiple properties and corresponding values into a single block as defined in the following example -<br> <br>
+
+					<strong id="text">
+					h1 { <br>
+					   color: #36C; <br>
+					   font-weight: normal; <br>
+					   letter-spacing: .4em; <br>
+					   margin-bottom: 1em; <br>
+					   text-transform: lowercase; <br>
+					}
+					</strong> <br><br>
+
+					Here all the property and value pairs are separated by a <strong id="text">semi colon (;). </strong> You can keep them in a single line or multiple lines. For better readability we keep them into separate lines. <br><br>
+
+					For a while, don't bother about the properties mentioned in the above block. These properties will be explained in the coming chapters and you can find complete detail about properties in CSS References.
+				</p>
+			</div>
+
+			<h1 id="names">Grouping Selectors</h1>
+			<div id="content">
+				<p>
+					You can apply a style to many selectors if you like. Just separate the selectors with a comma, as given in the following example -<br> <br>
+
+					<strong id="text">
+					h1, h2, h3 { <br>
+					  color: #36C;  <br>
+					  font-weight: normal;  <br>
+					  letter-spacing: .4em;  <br>
+					  margin-bottom: 1em;  <br>
+					  text-transform: lowercase;  <br>
+					}
+					</strong> <br><br>
+
+					This define style rule will be applicable to h1, h2 and h3 element as well. The order of the list is irrelevant. All the elements in the selector will have the corresponding declarations applied to them. <br><br>
+
+					You can combine the various id selectors together as shown below<br><br>
+
+					<strong id="text">
+					#content, #footer, #supplement { <br>
+					   position: absolute; <br>
+					   left: 510px; <br>
+					   width: 200px; <br>
+					}
+
+					</strong>
+
+				</p>
+			</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="ajava.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="javahome.html">JAVA HOME</a></li>
+		<li><a href="javaoverview.html">JAVA Overview</a></li>
+		<li><a href="javaenvironment.html">JAVA Environment Setup</a></li>
+		<li><a href="javabasic.html">JAVA Basic Syntax</a></li>
+		<li><a href="javaobject.html">JAVA Object & Classes</a></li>
+		<li><a href="javadata.html">JAVA Basic Data Types</a></li>
+		<li><a href="" id="home">JAVA Variable Types</a></li>
+		<li><a href="javamodifier.html">JAVA Modifier Types</a></li>
+		<li><a href="javaoperator.html">JAVA Basic Operators</a></li>
+		<li><a href="javaloop.html">JAVA Loop Control</a></li>
+		<li><a href="javadecision.html">JAVA Decision Making</a></li>
+		<li><a href="javanumber.html">JAVA Numbers</a></li>
+		<li><a href="javacharacter.html">JAVA Characters</a></li>
+		<li><a href="javastring.html">JAVA Strings</a></li>
+		<li><a href="javaarray.html">JAVA Arrays</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">Java - Variable Types</h1>
+			<div id="content">
+				<p>
+					A variable provides us with named storage that our programs can manipulate. Each variable in Java has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable. <br><br>
+
+					You must declare all variables before they can be used. Following is the basic form of a variable declaration − <br><br>
+
+					<strong id="text">
+						data type variable [ = value][, variable [ = value] ...] ;
+					</strong> <br><br>
+
+					Here data type is one of Java's datatypes and variable is the name of the variable. To declare more than one variable of the specified type, you can use a comma-separated list. <br><br>
+
+					Following are valid examples of variable declaration and initialization in Java −
+					<br>
+
+					<h2>Example</h2>
+
+					<table align="center" width="600" border="1">
+						<tr id="text">
+							<td>int a, b, c;</td>
+							<td>// Declares three ints, a, b, and c. </td>
+						</tr>
+
+						<tr id="text">
+							<td>int a = 10, b = 10;</td>
+							<td>// Example of initialization</td>
+						</tr>
+
+						<tr id="text">
+							<td>byte B = 22;</td>
+							<td>// initializes a byte type variable B.</td>
+						</tr>
+
+						<tr id="text">
+							<td>double pi = 3.14159;</td>
+							<td>// declares and assigns a value of PI.</td>
+						</tr>
+
+						<tr id="text">
+							<td>char a = 'a';</td>
+							<td>// the char variable a iis initialized with value 'a'</td>
+						</tr>
+					</table> <br>
+
+					This chapter will explain various variable types available in Java Language. There are three kinds of variables in Java − <br>
+
+					<ul type="square">
+						<li>Local variables</li>
+						<li>Instance variables</li>
+						<li>Class/Static variables</li>
+					</ul>
+				</p>
+			</div>
+
+			<h1 id="names">Local Variables</h1>
+			<div id="content">
+				<p>
+					<ul type="square">
+						<li>
+						Local variables are declared in methods, constructors, or blocks.
+						</li> <br>
+
+						<li>
+						Local variables are created when the method, constructor or block is entered and the variable will be destroyed once it exits the method, constructor, or block.
+						</li> <br>
+
+						<li>
+						Access modifiers cannot be used for local variables.
+						</li> <br>
+
+						<li>
+						Local variables are visible only within the declared method, constructor, or block.
+						</li> <br>
+
+						<li>
+						Local variables are implemented at stack level internally.
+						</li> <br>
+
+						<li>
+						There is no default value for local variables, so local variables should be declared and an initial value should be assigned before the first use.
+						</li>
+					</ul>
+				</p>
+			</div>
+
+			<h1 id="names">Instance Variables</h1>
+			<div id="content">
+				<p>
+					<ul type="square">
+						<li>
+						Instance variables are declared in a class, but outside a method, constructor or any block.
+						</li> <br>
+
+						<li>
+						When a space is allocated for an object in the heap, a slot for each instance variable value is created.
+						</li> <br>
+
+						<li>
+						Instance variables are created when an object is created with the use of the keyword 'new' and destroyed when the object is destroyed.
+						</li> <br>
+
+						<li>
+						Instance variables hold values that must be referenced by more than one method, constructor or block, or essential parts of an object's state that must be present throughout the class.
+						</li> <br>
+
+						<li>
+						Instance variables can be declared in class level before or after use.
+						</li> <br>
+
+						<li>
+						Access modifiers can be given for instance variables.
+						</li> <br>
+
+						<li>
+						The instance variables are visible for all methods, constructors and block in the class. Normally, it is recommended to make these variables private (access level). However, visibility for subclasses can be given for these variables with the use of access modifiers.
+						</li> <br>
+
+						<li>
+						Instance variables have default values. For numbers, the default value is 0, for Booleans it is false, and for object references it is null. Values can be assigned during the declaration or within the constructor.
+						</li> <br>
+
+						<li>
+						Instance variables can be accessed directly by calling the variable name inside the class. However, within static methods (when instance variables are given accessibility), they should be called using the fully qualified name. ObjectReference.VariableName.
+						</li> <br>
+					</ul>
+				</p>
+			</div> <br>
+
+			<h1 id="names">Class/Static Variables</h1>
+			<div id="content">
+				<p>
+					<ul type="square">
+						<li>
+						Class variables also known as static variables are declared with the static keyword in a class, but outside a method, constructor or a block.
+						</li> <br>
+
+						<li>
+						There would only be one copy of each class variable per class, regardless of how many objects are created from it.
+						</li> <br>
+
+						<li>
+						Static variables are rarely used other than being declared as constants. Constants are variables that are declared as public/private, final, and static. Constant variables never change from their initial value.
+						</li> <br>
+
+						<li>
+						Static variables are stored in the static memory. It is rare to use static variables other than declared final and used as either public or private constants.
+						</li> <br>
+
+						<li>
+						Static variables are created when the program starts and destroyed when the program stops.
+						</li> <br>
+
+						<li>
+						Visibility is similar to instance variables. However, most static variables are declared public since they must be available for users of the class.
+						</li> <br>
+
+						<li>
+						Default values are same as instance variables. For numbers, the default value is 0; for Booleans, it is false; and for object references, it is null. Values can be assigned during the declaration or within the constructor. Additionally, values can be assigned in special static initializer blocks.
+						</li> <br>
+
+						<li>
+						Static variables can be accessed by calling with the class name ClassName.VariableName.
+						</li> <br>
+
+						<li>
+						When declaring class variables as public static final, then variable names (constants) are all in upper case. If the static variables are not public and final, the naming syntax is the same as instance and local variables.
+						</li> <br>
+					</ul>
+				</p>
+			</div> <br>
+
+</div>
+</div>
+</body>
+</html>

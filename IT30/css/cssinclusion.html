@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="csshome.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="csshome.html">Css HOME</a></li>
+		<li><a href="cssintro.html">Css Introduction</a></li>
+		<li><a href="csssyntax.html">Css Syntax</a></li>
+		<li><a href="" id="home">Css Inclusion</a></li>
+		<li><a href="cssmeasure.html">Css Measurement Units</a></li>
+		<li><a href="cssfont.html">Css Fonts</a></li>
+		<li><a href="csstext.html">Css Text</a></li>
+		<li><a href="csslink.html">Css Links</a></li>
+		<li><a href="csstable.html">Css Tables</a></li>
+		<li><a href="cssborder.html">Css Borders</a></li>
+		<li><a href="cssmargin.html">Css Margins</a></li>
+		<li><a href="csslist.html">Css Lists</a></li>
+		<li><a href="csspadding.html">Css Padding</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">CSS - Inclusion</h1>
+			<div id="content">
+				<p>
+				There are four ways to associate styles with your HTML document. Most commonly used methods are inline CSS and External CSS.<br><br>
+			</div>
+
+			<h1 id="names">Embedded CSS - The < style> Element</h1>
+			<div id="content">
+				<p>
+				You can put your CSS rules into an HTML document using the < style> element. This tag is placed inside < head>...</ head> tags. Rules defined using this syntax will be applied to all the elements available in the document. Here is the generic syntax -<br><br>
+
+				Following is the example of embed CSS based on the above syntax − <br><br>
+
+				<strong id="text">
+				< !DOCTYPE html> <br>
+				< html> <br>
+				   < head> <br><br>
+				   
+				      < style type = "text/css" media = "all"> <br>
+				         body { <br>
+				            background-color: linen; <br>
+				         } <br>
+				         h1 { <br>
+				            color: maroon; <br>
+				            margin-left: 40px; <br>
+				         } <br>
+				      < /style> <br><br>
+				      
+				   < /head>    <br>
+				   < body> <br>
+				      < h1>This is a heading</h1> <br>
+				      < p>This is a paragraph.</p> <br>
+				   < /body>
+				</ html>
+				</strong> <br><br>
+
+				It will produce the following result - <br><br>
+
+				<strong id="text">
+					<h1 style="color:maroon;margin-left: 40px;">This is a heading</h1>
+
+				<p>This is a paragraph.</p>
+				</strong>
+
+				<h2>Attributes</h2>
+				Attributes associated with < style> elements are - <br><br>
+
+				<table align="center" border="2px" width="700px">
+					<tr>
+						<th>Attribute</th>
+						<th>Value</th>
+						<th>Description</th>
+					</tr>
+
+					<tr>
+						<td>type</td>
+						<td>text/css</td>
+						<td>Specifies the style sheet language as a content-type (MIME type). This is required attribute.</td>
+					</tr>
+
+					<tr>
+						<td>media</td>
+						<td>
+						screen <br><br>
+						tty <br><br>
+						tv <br><br>
+						projection <br><br>
+						handheld <br><br>
+						print <br><br>
+						braille <br><br>
+						aural<br> <br>
+						all</td><br>
+						<td>Specifies the device the document will be displayed on. Default value is all. This is an optional attribute.</td>
+					</tr>
+				</table>
+			</div>
+
+			<h1 id="names">Inline CSS - The style Attribute</h1>
+			<div id="content">
+				<p>
+				You can use style attribute of any HTML element to define style rules. These rules will be applied to that element only. Here is the generic syntax -<br><br>
+
+				<strong id="text">
+					< element style = "...style rules....">
+				</strong>
+
+				<h2> Attributes</h2>
+
+				<table align="center" width="700" border="2">
+					<tr>
+						<th>Attribute</th>
+						<th>Value</th>
+						<th>Description</th>
+					</tr>
+
+					<tr>
+						<td>style</td>
+						<td>style rules</td>
+						<td>The value of style attribute is a combination of style declarations separated by semicolon (;).</td>
+					</tr>
+				</table> <br><br>
+
+				<h2>Example</h2> <br><br>
+
+				Following is the example of inline CSS based on the above syntax - <br><br>
+
+				<strong id="text">
+				< html> <br>
+				< head> <br>
+				< /head > <br>
+				< body> <br>
+				< h1 style = "color:#36C;"> This is inline CSS < / h1 > <br>
+				< / body > <br>
+				< / html > <br>
+				</strong> <br><br>
+
+				It will produce the following result − <br><br>
+
+				<h1 style = "color:#36C;">This is inline CSS</h1>
+			</div>
+
+			<h1 id="names">External CSS - The < link> Element</h1>
+			<div id="content">
+				<p>
+				The <link> element can be used to include an external stylesheet file in your HTML document.<br><br>
+
+				An external style sheet is a separate text file with .css extension. You define all the Style rules within this text file and then you can include this file in any HTML document using < link> element.<br><br>
+
+				Here is the generic syntax of including external CSS file -<br><br>
+
+				<strong id="text">
+				< head >
+				   < link type = "text/css" href = "..." media = "..." / >
+				< /head >
+				</strong>
+
+				<h2>Attributes</h2> <br>
+				Attributes associated with < style> elements are − <br><br>
+
+				<table align="center" width="700" border="2">
+					<tr>
+						<th>Attribute</th>
+						<th>Value</th>
+						<th>Description</th>
+					</tr>
+
+					<tr>
+						<td>type</td>
+						<td>text/css</td>
+						<td>Specifies the style sheet language as a content-type (MIME type). This attribute is required.</td>
+					</tr>
+
+					<tr>
+						<td>href</td>
+						<td>URL</td>
+						<td>Specifies the style sheet file having Style rules. This attribute is a required.</td>
+					</tr>
+
+					<tr>
+						<td>media</td>
+						<td>
+						screen <br><br>
+						tty <br><br>
+						tv <br><br>
+						projection <br><br>
+						handheld <br><br>
+						print <br><br>
+						braille <br><br>
+						aural <br><br>
+						all <br><br>
+						</td>
+						<td>Specifies the device the document will be displayed on. Default value is all. This is optional attribute.</td>
+					</tr>
+				</table>
+
+				<h2>Example</h2> <br><br>
+
+				Consider a simple style sheet file with a name mystyle.css having the following rules - <br><br>
+
+				<strong id="text">
+				h1, h2, h3 { <br>
+					   color: #36C; <br>
+					   font-weight: normal; <br>
+					   letter-spacing: .4em; <br>
+					   margin-bottom: 1em; <br>
+					   text-transform: lowercase; <br>
+				}
+				</strong><br><br>
+
+				Now you can include this file mystyle.css in any HTML document as follows -
+
+				<strong id="text">
+				< head >
+				   < link type = "text/css" href = "mystyle.css" media = " all" / >
+				< /head >
+				</strong>
+			</div>
+
+			<h1 id="names">Imported CSS - @import Rule</h1>
+			<div id="content">
+				<p>
+				@import is used to import an external stylesheet in a manner similar to the <link> element. Here is the generic syntax of @import rule. <br><br>
+
+				<strong id="text">
+				< head> <br>
+				   <@import "URL"; <br>
+				< /head >
+				</strong> <br><br>
+
+				Here URL is the URL of the style sheet file having style rules. You can use another syntax as well - <br><br>
+
+				<strong id="text">
+				< head> <br>
+				   <@import url("URL"); <br>
+				< /head> 
+				</strong> <br><br>
+
+				<h2>Example</h2> <br>
+				Following is the example showing you how to import a style sheet file into HTML document - <br><br>
+
+				<strong id="text">
+				< head> <br>
+				   @import "mystyle.css";<br>
+				< /head>
+				</strong>
+			</div>
+
+			<h1 id="names">CSS Rules Overriding</h1>
+			<div id="content">
+				<p>
+				We have discussed four ways to include style sheet rules in a an HTML document. Here is the rule to override any Style Sheet Rule.<br><br>
+
+				<ul>
+					<li>
+						Any inline style sheet takes highest priority. So, it will override any rule defined in < style>...< /style> tags or rules defined in any external style sheet file.
+					</li> <br>
+					<li>
+						Any rule defined in < style>...< /style> tags will override rules defined in any external style sheet file.
+					</li> <br>
+					<li> 
+						Any rule defined in external style sheet file takes lowest priority, and rules defined in this file will be applied only when above two rules are not applicable.
+					</li> 
+				</ul> <br><br>
+			</div>
+
+			<h1 id="names">Handling old Browsers</h1>
+			<div id="content">
+				<p>
+				There are still many old browsers who do not support CSS. So, we should take care while writing our Embedded CSS in an HTML document. The following snippet shows how you can use comment tags to hide CSS from older browsers -<br><br>
+
+				<strong id="text">
+				< style type="text/css"> <br>
+				   < !-- <br>
+				      body, td { <br>
+				         color: blue; <br>
+				      } <br>
+				   --> <br>
+				< /style > 
+				</strong> <br><br>
+			</div>
+
+
+			<h1 id="names">CSS Comments</h1>
+			<div id="content">
+				<p>
+				Many times, you may need to put additional comments in your style sheet blocks. So, it is very easy to comment any part in style sheet. You can simple put your comments inside /*.....this is a comment in style sheet.....*/. <br><br>
+
+				You can use /* ....*/ to comment multi-line blocks in similar way you do in C and C++ programming languages.<br><br>
+
+				<h2>Example</h2>
+				<strong id="text">
+				< !DOCTYPE html>  <br>
+				< html> <br>
+				   < head>  <br>
+				      < style>  <br>
+				         p {  <br>
+				            color: red;  <br>
+				            /* This is a single-line comment */  <br>
+				            text-align: center;  <br>
+				         }  <br>
+				         /* This is a multi-line comment */  <br>
+				      < /style>  <br>
+				   < /head>  <br>
+				   < body>  <br>
+				      <p>Hello World!</p>  <br>
+				   < /body>  <br>
+				< /html>
+				</strong> <br><br>
+
+				It will produce the following result - <br><br>
+
+				<p style="color: red;text-align: center">Hello World!</p>
+			</div>
+</div>
+</div>
+</body>
+</html>

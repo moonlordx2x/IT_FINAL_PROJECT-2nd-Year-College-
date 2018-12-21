@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="csshome.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="csshome.html">Css HOME</a></li>
+		<li><a href="cssintro.html">Css Introduction</a></li>
+		<li><a href="csssyntax.html">Css Syntax</a></li>
+		<li><a href="cssinclusion.html">Css Inclusion</a></li>
+		<li><a href="cssmeasure.html">Css Measurement Units</a></li>
+		<li><a href="cssfont.html">Css Fonts</a></li>
+		<li><a href="csstext.html">Css Text</a></li>
+		<li><a href="" id="home">Css Links</a></li>
+		<li><a href="csstable.html">Css Tables</a></li>
+		<li><a href="cssborder.html">Css Borders</a></li>
+		<li><a href="cssmargin.html">Css Margins</a></li>
+		<li><a href="csslist.html">Css Lists</a></li>
+		<li><a href="csspadding.html">Css Padding</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">CSS - Links</h1>
+			<div id="content">
+				<p>
+					This chapter teaches you how to set different properties of a hyper link using CSS. You can set following properties of a hyper link − <br><br>
+
+					We will revisit the same properties when we will discuss Pseudo-Classes of CSS.<br><br>
+
+					<ul>
+						<li>The <strong id="text"> :link</strong> signifies unvisited hyperlinks.</li> <br>
+
+						<li>The <strong id="text"> :visited</strong> signifies visited hyperlinks.</li> <br>
+
+						<li>The <strong id="text"> :hover</strong> signifies an element that currently has the user's mouse pointer hovering over it.</li> <br>
+
+						<li>The <strong id="text"> :active</strong> signifies an element on which the user is currently clicking.</li>
+
+					</ul> <br><br>
+
+						Usually, all these properties are kept in the header part of the HTML document.
+						<br><br>
+
+						Remember a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective. Also, a:active MUST come after a:hover in the CSS definition as follows − <br><br>
+
+						<strong id="text">
+						< style type="text/css"> <br>
+						  	a:link {color: #000000} <br> 
+						   	a:visited {color: #006600} <br>
+						   	a:hover {color: #FFCC00} <br>
+						   	a:active {color: #FF00CC}<br>
+						< /style>
+						</strong> <br><br>
+
+						Now, we will see how to use these properties to give different effects to hyperlinks.
+				</p>
+			</div>
+
+			<h1 id="names">Set the Color of Links</h1>
+			<div id="content">
+				<p>
+					The following example demonstrates how to set the link color. Possible values could be any color name in any valid format.<br><br>
+
+					<strong id="text">
+				< html> <br>
+				  		 < head> <br> 
+				     			 < style type="text/css"> <br>
+				    		      a:link {color:#000000} <br>
+				    			 < /style> <br>
+				   		< /head> <br>
+				   			< body> <br>
+				      			< a href="">Link</a> <br>
+				   			< /body> <br>
+				< /html> 
+					</strong> <br><br>
+
+					It will produce the following black link:<br><br>
+						<html>
+						   <head>
+						      <style type="text/css">
+						         a:link {color:#000000}
+						     </style>
+						   </head>
+						   <body>
+						      <a href="" style="background-color:white">Link</a>
+						   </body>
+						</html> 
+				</p>
+			</div>
+
+			<h1 id="names">Set the Color of Visited Links</h1>
+			<div id="content">
+				<p>
+					The following example demonstrates how to set the color of visited links. Possible values could be any color name in any valid format.<br><br>
+
+					<strong id="text">
+				< html> <br>
+				  		 < head> <br> 
+				     			 < style type="text/css"> <br>
+				    		      a:visited {color: blue} <br>
+				    			 < /style> <br>
+				   		< /head> <br>
+				   			< body> <br>
+				      			< a href="">Link</a> <br>
+				   			< /body> <br>
+				< /html> 
+					</strong> <br><br>
+
+					It will produce the following link. Once you will click this link, it will change its color to blue.<br><br>
+						<html>
+						   <head>
+						      <style type="text/css">
+						         a:link {color:blue}
+						     </style>
+						   </head>
+						   <body>
+						      <a href="" style="background-color:white">Link</a>
+						   </body>
+						</html> 
+				</p>
+			</div>
+
+			<h1 id="names">Change the Color of Links when  <br>Mouse is Over</h1>
+			<div id="content">
+				<p>
+					The following example demonstrates how to change the color of links when we bring a mouse pointer over that link. Possible values could be any color name in any valid format.<br><br>
+
+					<strong id="text">
+				< html> <br>
+				  		 < head> <br> 
+				     			 < style type="text/css"> <br>
+				    		      a:hover {color: #FFCC00} <br>
+				    			 < /style> <br>
+				   		< /head> <br>
+				   			< body> <br>
+				      			< a href="">Link</a> <br>
+				   			< /body> <br>
+				< /html> 
+					</strong> <br><br>
+
+					It will produce the following link. Now, you bring your mouse over this link and you will see that it changes its color to yellow.<br><br>
+						<html>
+						   <head>
+						      <style type="text/css">
+						         a:hover {color: #FFCC00}
+						     </style>
+						   </head>
+						   <body>
+						      <a href="" style="background-color:white">Link</a>
+						   </body>
+						</html> 
+				</p>
+			</div>
+
+			<h1 id="names">Change the Color of Active Links</h1>
+			<div id="content">
+				<p>
+					The following example demonstrates how to change the color of active links. Possible values could be any color name in any valid format.<br><br>
+
+					<strong id="text">
+				< html> <br>
+				  		 < head> <br> 
+				     			 < style type="text/css"> <br>
+				    		      a:active {color: #FF00CC} <br>
+				    			 < /style> <br>
+				   		< /head> <br>
+				   			< body> <br>
+				      			< a href="">Link</a> <br>
+				   			< /body> <br>
+				< /html> 
+					</strong> <br><br>
+
+					It will produce the following link. It will change its color to pink when the user clicks it.<br><br>
+					
+						<html>
+						   <head>
+						      <style type="text/css">
+						        a:active {color: #FF00CC}
+						     </style>
+						   </head>
+						   <body>
+						      <a href="" style="background-color:white">Link</a>
+						   </body>
+						</html> 
+				</p>
+			</div>
+</div>
+</div>
+</body>
+</html>

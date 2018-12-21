@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="c++data.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="c++home.html">C++ HOME</a></li>
+		<li><a href="c++overview.html">C++ Overview</a></li>
+		<li><a href="c++environment.html">C++ Environment</a></li>
+		<li><a href="c++basic.html">C++ Basic Syntax</a></li>
+		<li><a href="c++comment.html">C++ Comments</a></li>
+		<li><a href="c++data.html">C++ Data Types</a></li>
+		<li><a href="#" id="home">C++ Variables Types</a></li>
+		<li><a href="c++scope.html">C++ Variables Scope</a></li>
+		<li><a href="c++contant.html">C++ Contants/Literals</a></li>
+		<li><a href="c++modifier.html">C++ Modifier Types</a></li>
+		<li><a href="c++storage.html">C++ Storage Classes</a></li>
+		<li><a href="c++operator.html">C++ Operators</a></li>
+		<li><a href="c++loop.html">C++ Loop Types</a></li>
+		<li><a href="c++decision.html">C++ Decision Making</a></li>
+		<li><a href="c++function.html">C++ Functions</a></li>
+		<li><a href="c++number.html">C++ Numbers</a></li>
+		<li><a href="c++array.html">C++ Arrays</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">C++ Variable Types</h1>
+			<div id="content1">
+				<p>
+					A variable provides us with named storage that our programs can manipulate. Each variable in C++ has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.<br><br>
+
+					The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because C++ is case-sensitive:<br><br>
+
+					There are following basic types of variable in C++ as explained in last chapter:<br><br>
+
+					<table align="center" border="2px" width="700">
+						<tr>
+						<th>Type</th>
+						<th>Description</th>
+						</tr>
+
+						<tr>
+							<td>bool</td>
+							<td>Stores either value true or false.</td>
+						</tr>
+
+						<tr>
+							<td>char</td>
+							<td>Typically a single octet(one byte). This is an integer type.</td>
+						</tr>
+
+						<tr>
+							<td>int</td>
+							<td>The most natural size of integer for the machine.</td>
+						</tr>
+
+						<tr>
+							<td>float</td>
+							<td>A single-precision floating point value.</td>
+						</tr>
+
+						<tr>
+							<td>double</td>
+							<td>A double-precision floating point value.</td>
+						</tr>
+
+						<tr>
+							<td>void</td>
+							<td>Represents the absence of type.</td>
+						</tr>
+
+						<tr>
+							<td>wchar_t</td>
+							<td>A wide character type.</td>
+						</tr>
+					</table> <br><br>
+
+					C++ also allows to define various other types of variables, which we will cover in subsequent chapters like Enumeration, Pointer, Array, Reference, Data structures, and Classes. <br><br>
+
+					Following section will cover how to define, declare and use various types of variables.
+					</p>
+			</div>
+
+			<h1 id="names">Variable Definition in C++</h1>
+			<div id="content1">
+				<p>
+					A variable definition means to tell the compiler where and how much to create the storage for the variable. A variable definition specifies a data type, and contains a list of one or more variables of that type as follows -<br><br>
+
+					<strong id="text">type variable_list;</strong><br><br>
+
+					Here, type must be a valid C++ data type including char, w_char, int, float, double, bool or any user-defined object, etc., and variable_list may consist of one or more identifier names separated by commas. Some valid declarations are shown here -<br><br>
+
+					<strong id="text">
+						int    i, j, k; <br>
+						char   c, ch; 	<br>
+						float  f, salary; <br>
+						double d;
+					</strong><br><br>
+
+					The line int i, j, k; both declares and defines the variables i, j and k; which instructs the compiler to create variables named i, j and k of type int. <br><br>
+
+					Variables can be initialized (assigned an initial value) in their declaration. The initializer consists of an equal sign followed by a constant expression as follows:<br><br>
+
+					<strong id="text">type variable_name = value;</strong><br><br>
+					
+
+					Some examples are: <br><br>
+
+					<strong id="text">
+					extern int d = 3, f = 5;    // declaration of d and f.  <br> 
+					int d = 3, f = 5;           // definition and initializing d and f. <br>
+					char x = 'x';               // the variable x has the value 'x'. <br>
+					</strong> <br><br>
+
+					For definition without an initializer: variables with static storage duration are implicitly initialized with NULL (all bytes have the value 0); the initial value of all other variables is undefined.<br><br>
+				</p>
+			</div>
+
+			<h1 id="names">Variable Declaration in C++</h1>
+			<div id="content1">
+				<p>
+					A variable declaration provides assurance to the compiler that there is one variable existing with the given type and name so that compiler proceed for further compilation without needing complete detail about the variable. A variable declaration has its meaning at the time of compilation only, compiler needs actual variable definition at the time of linking of the program.<br><br>
+
+					A variable declaration is useful when you are using multiple files and you define your variable in one of the files which will be available at the time of linking of the program. You will use extern keyword to declare a variable at any place. Though you can declare a variable multiple times in your C++ program, but it can be defined only once in a file, a function or a block of code.<br><br>
+				</p>
+			</div>
+
+			<h1 id="names">Example</h1>
+			<div id="content1">
+				<p>
+					Try the following example where a variable has been declared at the top, but it has been defined inside the main function:<br><br>
+
+					<strong id="text">
+						#include <iostream> <br>
+						using namespace std; <br><br>
+
+						// Variable declaration: <br>
+						extern int a, b; <br> 
+						extern int c; <br> 
+						extern float f; <br><br>
+						  
+						int main () { <br>
+						   // Variable definition: <br>
+						   int a, b; <br> 
+						   int c; <br>
+						   float f; <br><br>
+						 
+						   // actual initialization <br>
+						   a = 10; <br>
+						   b = 20; <br>
+						   c = a + b; <br><br>
+						 
+						   cout << c << endl ; <br><br>
+
+						   f = 70.0/3.0; <br>
+						   cout << f << endl ; <br> <br>
+						 
+						   return 0; <br>
+						}
+					</strong> <br><br>
+
+					When the above code is compiled and executed, it produces the following result -<br><br>
+
+					<strong id="text">
+						30 <br>
+						23.3333
+					</strong> <br><br>
+
+					Same concept applies on function declaration where you provide a function name at the time of its declaration and its actual definition can be given anywhere else. For example -<br><br>
+
+					<strong id="text">
+					// function declaration <br>
+					int func(); <br><br>
+
+					int main() { <br>
+					   // function call <br>
+					   int i = func(); <br>
+					} <br><br>
+
+					// function definition <br>
+					int func() { <br>
+					   return 0; <br>
+					}
+					</strong><br><br>
+				</p>
+			</div>
+
+			<h1 id="names">Lvalues and Rvalues</h1>
+			<div id="content1">
+				<p>
+					There are two kinds of expressions in C++ -<br><br>
+
+					<ul>
+						<li>
+							<strong id="text">lvalue</strong> - Expressions that refer to a memory location is called "lvalue" expression. An lvalue may appear as either the left-hand or right-hand side of an assignment.
+						</li>
+							<br>
+						<li>
+							<strong id="text">rvalue</strong> - The term rvalue refers to a data value that is stored at some address in memory. An rvalue is an expression that cannot have a value assigned to it which means an rvalue may appear on the right- but not left-hand side of an assignment.
+
+						</li>
+					</ul>
+
+					Variables are lvalues and so may appear on the left-hand side of an assignment. Numeric literals are rvalues and so may not be assigned and can not appear on the left-hand side. Following is a valid statement -  <br><br>
+
+					<strong id="text"> int g = 20;</strong> <br><br>
+
+					But following is not a valid statement and would generate compile-time error - <br><br>
+
+					<strong id="text">10 = 20;</strong>
+				</p>
+			</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="c++modifier.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="c++home.html">C++ HOME</a></li>
+		<li><a href="c++overview.html">C++ Overview</a></li>
+		<li><a href="c++environment.html">C++ Environment</a></li>
+		<li><a href="c++basic.html">C++ Basic Syntax</a></li>
+		<li><a href="c++comment.html">C++ Comments</a></li>
+		<li><a href="c++data.html">C++ Data Types</a></li>
+		<li><a href="c++variable.html">C++ Variables Types</a></li>
+		<li><a href="c++scope.html">C++ Variables Scope</a></li>
+		<li><a href="c++contant.html">C++ Contants/Literals</a></li>
+		<li><a href="" id="home">C++ Modifier Types</a></li>
+		<li><a href="c++storage.html">C++ Storage Classes</a></li>
+		<li><a href="c++operator.html">C++ Operators</a></li>
+		<li><a href="c++loop.html">C++ Loop Types</a></li>
+		<li><a href="c++decision.html">C++ Decision Making</a></li>
+		<li><a href="c++function.html">C++ Functions</a></li>
+		<li><a href="c++number.html">C++ Numbers</a></li>
+		<li><a href="c++array.html">C++ Arrays</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">C++ Modifier Types</h1>
+			<div id="content1">
+				<p>
+					C++ allows the <strong id="text">char, int, and double</strong> data types to have modifiers preceding them. A modifier is used to alter the meaning of the base type so that it more precisely fits the needs of various situations.
+				<br><br>
+					The data type modifiers are listed here:
+                <br><br>
+                <ul id="text">
+                	<li>signed</li>
+                	<li>unsigned</li>
+                	<li>long</li>
+                	<li>short</li>
+                </ul>
+
+                The modifiers <strong id="text">signed, unsigned, long, and short</strong> can be applied to integer base types. In addition, <strong id="text"> signed and unsigned </strong> can be applied to char, and long can be applied to double. <br><br>
+
+                The modifiers <strong id="text"> signed and unsigned </strong> can also be used as prefix to <strong id="text"> long or short </strong> modifiers. For example, <strong id="text"> unsigned long int. </strong><br><br>
+
+                C++ allows a shorthand notation for declaring <strong id="text"> unsigned, short, or long </strong> integers. You can simply use the word <strong id="text"> unsigned, short, or long, </strong> without the int. The int is implied. For example, the following two statements both declare unsigned integer variables.<br><br>
+
+                <strong id="text">
+                unsigned x; <br>
+				unsigned int y;
+				</strong><br><br>
+
+				To understand the difference between the way that signed and unsigned integer modifiers are interpreted by C++, you should run the following short program:<br><br>
+
+				<strong id="text">
+				#include <iostream> <br>
+				using namespace std; <br><br>
+					 
+				/* This program shows the difference between <br>
+				* signed and unsigned integers. <br>
+				*/ <br>
+				int main() { <br>
+				short int i;           // a signed short integer <br>
+				short unsigned int j;  // an unsigned short integer <br><br>
+
+    			j = 50000; <br><br>
+
+				i = j; <br>
+				cout << i << " " << j; <br><br>
+
+				return 0; <br>
+				}
+				</strong> <br><br>
+
+				When this program is run, following is the output: <br><br>
+
+				<strong id="text">
+					-15536 50000
+				</strong> <br><br>
+
+				The above result is because the bit pattern that represents 50,000 as a short unsigned integer is interpreted as -15,536 by a short.
+				</p>
+			</div>
+
+			<h1 id="names">Type Qualifiers in C++</h1>
+			<div id="content1">
+				<p>
+					The type qualifiers provide additional information about the variables they precede. <br><br>
+
+					<table border="2px" width="700px">
+						<tr>
+							<th>Qualifier</th>
+							<th>Meaning</th>
+						</tr>
+
+						<tr>
+							<td>const</td>
+							<td>Objects of type const cannot be changed by your program during execution</td>
+						</tr>
+
+						<tr>
+							<td>volatile</td>
+							<td>The modifier volatile tells the compiler that a variable's value may be changed in ways not explicitly specified by the program.</td>
+						</tr>
+
+						<tr>
+							<td>restrict</td>
+							<td>A pointer qualified by restrict is initially the only means by which the object it points to can be accessed. Only C99 adds a new type qualifier called restrict.</td>
+						</tr>
+					</table>
+				</p>
+			</div>
+
+			
+</div>
+</body>
+</html>

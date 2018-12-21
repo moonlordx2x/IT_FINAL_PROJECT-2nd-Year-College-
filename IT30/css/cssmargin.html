@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="csshome.css">
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="csshome.html">Css HOME</a></li>
+		<li><a href="cssintro.html">Css Introduction</a></li>
+		<li><a href="csssyntax.html">Css Syntax</a></li>
+		<li><a href="cssinclusion.html">Css Inclusion</a></li>
+		<li><a href="cssmeasure.html">Css Measurement Units</a></li>
+		<li><a href="cssfont.html">Css Fonts</a></li>
+		<li><a href="csstext.html">Css Text</a></li>
+		<li><a href="csslink.html">Css Links</a></li>
+		<li><a href="csstable.html">Css Tables</a></li>
+		<li><a href="cssborder.html">Css Borders</a></li>
+		<li><a href="" id="home">Css Margins</a></li>
+		<li><a href="csslist.html">Css Lists</a></li>
+		<li><a href="csspadding.html">Css Padding</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">CSS - Margins</h1>
+			<div id="content">
+				<p>
+					The margin property defines the space around an HTML element. It is possible to use negative values to overlap content. <br><br>
+
+					The values of the margin property are not inherited by the child elements. Remember that the adjacent vertical margins (top and bottom margins) will collapse into each other so that the distance between the blocks is not the sum of the margins, but only the greater of the two margins or the same size as one margin if both are equal. <br><br>
+
+					We have the following properties to set an element margin. <br><br>
+
+					<ul>
+						<li>The <strong id="text">margin </strong>specifies a shorthand property for setting the margin properties in one declaration.</li> <br>
+
+						<li>The <strong id="text">margin-bottom </strong>specifies the bottom margin of an element.</li> <br>
+
+						<li>The <strong id="text">margin-top </strong>specifies the top margin of an element.</li> <br>
+
+						<li>The <strong id="text">margin-left </strong>specifies the left margin of an element.</li> <br>
+
+						<li>The <strong id="text">margin-right </strong>specifies the right margin of an element.</li>
+					</ul> <br><br>
+
+					Now, we will see how to use these properties with examples.
+				</p>
+			</div>
+
+			<h1 id="names">The Margin Property</h1>
+			<div id="content">
+				<p>
+					The margin property allows you set all of the properties for the four margins in one declaration. Here is the syntax to set margin around a paragraph − <br><br>
+
+					Here is an example − <br><br>
+
+					<strong id="text">
+				< html> <br>
+					   < head>< /head> <br>
+					   < body> <br>
+					      < p style="margin: 15px; border:1px solid black;">  <br>
+					      all four margins will be 15px  <br>
+					      < /p> <br><br>
+					      
+					      < p style="margin:10px 2%; border:1px solid black;"><br>
+					      top and bottom margin will be 10px, left and right margin will be 2% of the total width of the document. <br>
+					      < /p> <br><br>
+					      
+					      < p style="margin: 10px 2% -10px; border:1px solid black;"> <br>
+					      top margin will be 10px, left and right margin will be 2% of the total width of the document, bottom margin will be -10px
+					      < /p>  <br><br>
+					      
+					      < p style="margin: 10px 2% -10px auto; border:1px solid black;"> <br>
+					      top margin will be 10px, right margin will be 2% of the total width of the document, bottom margin will be -10px, left margin will be set by the browser
+					      <br>
+					      < /p> <br>
+					   < /body> <br>
+				< /html>
+					</strong><br><br>
+
+					It will produce the following result − <br><br>
+
+						  <p style="margin: 15px; border:1px solid black;"> 
+					      all four margins will be 15px 
+					      </p>
+					      
+					      <p style="margin:10px 2%; border:1px solid black;">
+					      top and bottom margin will be 10px, left and right margin will be 2% of the total width of the document. 
+					      </p>
+					      
+					      <p style="margin: 10px 2% -10px; border:1px solid black;">
+					      top margin will be 10px, left and right margin will be 2% of the total width of the document, bottom margin will be -10px
+					      </p> 
+					      
+					      <p style="margin: 10px 2% -10px auto; border:1px solid black;">
+					      top margin will be 10px, right margin will be 2% of the total width of the document, bottom margin will be -10px, left margin will be set by the browser 
+					      </p>
+				</p>
+			</div>
+
+			<h1 id="names">The margin-bottom Property</h1>
+			<div id="content">
+				<p>
+					The margin-bottom property allows you set bottom margin of an element. It can have a value in length, % or auto. <br><br>
+
+					Here is an example −<br><br>
+ 									<strong id="text">
+					< html> <br>
+						   < head>< /head> <br>
+						   < body> <br>
+						      < p style="margin-bottom: 15px; border:1px solid black;"> <br>
+						      This is a paragraph with a specified bottom margin. <br>
+						      < /p>  <br><br>
+						   
+						      < p style="margin-bottom: 5%; border:1px solid black;">  <br>
+						      This is another paragraph with a specified bottom margin in percent
+						      < /p> <br>
+						   < /body> <br>
+					< /html>
+					 				</strong> <br><br>
+
+					 It will produce the following result - <br><br>
+
+					 <p style="margin-bottom: 15px; border:1px solid black;">
+				      This is a paragraph with a specified bottom margin.
+				      </p>
+				   
+				      <p style="margin-bottom: 5%; border:1px solid black;"> 
+				      This is another paragraph with a specified bottom margin in percent
+				      </p>
+				</p>
+			</div>
+
+			<h1 id="names">The margin-right Property</h1>
+			<div id="content"> 
+					<p>
+					The margin-right property allows you set right margin of an element. It can have a value in length, % or auto. <br><br>
+					
+					Here is an example − <br><br>
+
+					<strong id="text">
+						< html> <br>
+						   < head>< /head> <br>
+								   < body> <br>
+							< p style="margin-right: 15px; border:1px solid black;">  <br>
+							This is a paragraph with a specified right margin < /p> <br><br>
+								      
+							< p style="margin-right: 5%; border:1px solid black;">  <br>
+							This is another paragraph with a specified right margin in percent < /p>
+								   < /body> <br>
+						< /html>  
+
+					</strong> <br><br>
+
+					It will produce the following result - <br><br>
+
+					<p style="margin-right: 15px; border:1px solid black;"> 
+				      This is a paragraph with a specified right margin 
+				    </p>
+				      
+				    <p style="margin-right: 5%; border:1px solid black;"> 
+				      This is another paragraph with a specified right margin in percent 
+				    </p>
+			</p>
+			</div>
+
+			<h1 id="names">The margin-left Property</h1>
+			<div id="content"> 
+					<p>
+					The margin-left property allows you set left margin of an element. It can have a value in length, % or auto. <br><br>
+
+					Here is an example: <br><br>
+
+
+					<strong id="text">
+						< html> <br>
+						   < head>< /head> <br>
+								   < body> <br>
+							< p style="margin-left: 15px; border:1px solid black;"> 
+						      This is a paragraph with a specified left margin <br> 
+						    < /p>  <br><br>
+								      
+							< p style="margin-left: 5%; border:1px solid black;">  <br>
+							This is another paragraph with a specified top margin in percent <br>
+							< /p> <br><br>
+								   < /body> <br>
+						< /html>  
+
+					</strong> <br><br>
+
+					It will produce the following result - <br><br>
+
+					<p style="margin-left: 15px; border:1px solid black;"> 
+				      This is a paragraph with a specified left margin 
+				      </p> 
+				   
+				    <p style="margin-left: 5%; border:1px solid black;"> 
+				      This is another paragraph with a specified top margin in percent 
+				      </p>
+			</p>
+			</div>
+</div>
+</div>
+</body>
+</html>

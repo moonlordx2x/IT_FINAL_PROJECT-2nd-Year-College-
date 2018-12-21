@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ST.JOHN PAUL II COLLEGE OF DAVAO</title>
+	<link rel="stylesheet" type="text/css" href="htmlcss.css">
+	<style type="text/css">
+		a{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<nav class="head">
+	<ul>
+		<a href="../index.html"><img src="schoologo.png" id="logo"></a>
+		<h2 id="school">ST.JOHN PAUL II COLLEGE OF DAVAO</h2>
+		<li> <a href='../home.html'>HOME</a> </li>
+		<li> <a href="../tutorials.html">TUTORIALS</a> </li>
+	</ul>	
+</nav>
+
+<div class="contains">
+	<ul id="link">
+		<li><a href="htmlhome.html">HTMl HOME</a></li>
+		<li><a href="htmloverview.html">HTML Overview</a></li>
+		<li><a href="htmlbasic.html">HTML Basic Tags</a></li>
+		<li><a href="htmlelement.html">HTML Elements</a></li>
+		<li><a href="htmlattribute.html">HTML Attribute</a></li>
+		<li><a href="htmlformat.html">HTML Formatting</a></li>
+		<li><a href="htmlphrase.html">HTML Phrase Tags</a></li>
+		<li><a href="htmlcomment.html">HTML Comments</a></li>
+		<li><a href="htmltable.html">HTML Tables</a></li>
+		<li><a href="htmllist.html">HTML Lists</a></li>
+		<li><a href="" id="home">HTML Text Links</a></li>
+		<li><a href="htmlblock.html">HTML Blocks</a></li>
+		<li><a href="htmlfont.html">HTML Fonts</a></li>
+		<li><a href="htmlstyle.html">HTML StyleSheet</a></li>
+	</ul>
+</div>
+
+
+<div class="main">
+
+	<div id="home">
+			<h1 id="names">HTML Text Links</h1>
+			<div id="content">
+				<p>
+					A webpage can contain various links that take you directly to other pages and even specific parts of a given page. These links are known as hyperlinks. <br><br>
+
+					Hyperlinks allow visitors to navigate between Web sites by clicking on words, phrases, and images. Thus you can create hyperlinks using text or images available on a webpage. <br><br>
+
+					Note: I recommend to go through a short tutorial on Understanding URL
+				</p>
+			</div>
+
+			<h1 id="names">Linking Documents</h1>
+			<div id="content">
+				<p>
+					A link is specified using HTML tag < a>. This tag is called anchor tag and anything between the opening < a> tag and the closing < /a> tag becomes part of the link and a user can click that part to reach to the linked document. Following is the simple syntax to use < a> tag.<br><br>
+
+					<strong id="text">
+						< a href="Document URL" ... attributes-list>Link Text< /a>
+					</strong>
+
+					<h2>Example</h2>
+					Let's try following example which links https://www.tutorialspoint.com at your page: <br><br>
+					<strong id="text">
+						< !DOCTYPE html> <br>
+						< html> <br>
+							< head> <br>
+								< title>Hyperlink Example< /title> <br>
+							< /head> <br>
+							< body> <br><br>
+								< p>Click following link< /p> <br>
+					< a href="https://www.tutorialspoint.com" target="_self">Tutorials Point< /a>
+							<br> <br>
+							< /body><br>
+						< /html>
+					</strong><br><br>
+
+					This will produce following result, where you can click on the link generated Tutorials Point to reach to the home page of Tutorials Point.<br><br>
+
+							<p>Click following link</p>
+					<a href="https://www.tutorialspoint.com" target="_self" style="color:white">Tutorials Point</a>
+							</p>
+			</div>
+
+			<h1 id="names">The target Attribute</h1>
+			<div id="content">
+				<p>
+					We have used target attribute in our previous example. This attribute is used to specify the location where linked document is opened. Following are possible options:<br><br>
+
+					<table width="600" align="center" border="2">
+						<tr>
+							<th>Option</th>
+							<th>Description</th>
+						</tr>
+
+						<tr>
+							<td>_blank</td>
+							<td>Opens the linked document in a new window or tab.</td>
+						</tr>
+
+						<tr>
+							<td>_self</td>
+							<td>Opens the linked document in the same frame.</td>
+						</tr>
+
+						<tr>
+							<td>_parent</td>
+							<td>Opens the linked document in the parent frame.</td>
+						</tr>
+
+						<tr>
+							<td>_top</td>
+							<td>Opens the linked document in the full body of the window.</td>
+						</tr>
+
+						<tr>
+							<td>targetframe</td>
+							<td>	Opens the linked document in a named targetframe.</td>
+						</tr>
+					</table>
+
+					<h2>Example</h2>
+
+					Try following example to understand basic difference in few options given for target attribute. <br><br>
+
+					<strong id="text">
+			< !DOCTYPE html> <br>
+				< html> <br>
+					< head> <br>
+							< title>Hyperlink Example< /title> <br>
+					< base href="https://www.tutorialspoint.com/"> <br>
+					< /head> <br>
+						< body> <br> <br>
+							< p>Click any of the following links< /p> <br> <br>
+							< a href="/html/index.htm" target="_blank"><br>Opens in New< /a> | <br><br>
+							< a href="/html/index.htm" target="_self">Opens in Self< /a> | <br><br>
+							< a href="/html/index.htm" target="_parent">Opens in Parent< /a> | <br><br>
+							< a href="/html/index.htm" target="_top">Opens in Body< /a> <br> <br>
+						< /body> <br>
+				< /html>
+					</strong><br><br>
+
+					This will produce following result, where you can click on different links to understand the difference between various options given for target attribute.<br><br>
+
+					<p>Click any of the following links</p>
+					<a href="/html/index.htm" target="_blank">Opens in New</a> |
+					<a href="/html/index.htm" target="_self">Opens in Self</a> |
+					<a href="/html/index.htm" target="_parent">Opens in Parent</a> |
+					<a href="/html/index.htm" target="_top">Opens in Body</a>
+				</p>
+			</div>
+</div>
+</div>
+</body>
+</html>
